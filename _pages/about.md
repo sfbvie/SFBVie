@@ -51,4 +51,4 @@ En tant que société savante scientifique, la SFBVie donne la priorité aux mé
 - Harmonisation des standards et bonnes pratiques.
 - Visibilité croisée avec les sociétés partenaires.
 
-Découvrez nos [groupes thématiques](/projects/), nos [ressources documentaires](/ressources/), et [comment adhérer](/adhesion/) à la SFBVie.
+Découvrez nos [groupes thématiques]({{ '/projects/' | relative_url }}), nos [ressources documentaires]({{ '/ressources/' | relative_url }}), et [comment adhérer]({{ '/adhesion/' | relative_url }}) à la SFBVie.

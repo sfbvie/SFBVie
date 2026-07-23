@@ -10,4 +10,4 @@ Présentation de la mission et de la charte scientifique, lancement des groupes 
 
 **Lieu :** Nice · **Date :** mars 2026 · **Format :** 2 jours
 
-Consultez le [programme (DOCX)](/assets/pdf/programme_premium.docx) et les [ressources documentaires](/ressources/) de la SFBVie.
+Consultez le [programme (DOCX)]({{ '/assets/pdf/programme_premium.docx' | relative_url }}) et les [ressources documentaires]({{ '/ressources/' | relative_url }}) de la SFBVie.
