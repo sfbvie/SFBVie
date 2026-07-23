@@ -1,9 +1,9 @@
 ---
 layout: profiles
 permalink: /people/
-title: people
-description: members of the lab or group
-nav: true
+title: bureau
+description: membres du bureau et du conseil d'administration de la SFBVie
+nav: false # TODO: enable once real board-member profiles replace the example content below
 nav_order: 7
 
 profiles:

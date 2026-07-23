@@ -2,18 +2,17 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: Société savante nationale dédiée à la biologie fondamentale du vieillissement, ouverte à l'international.
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: logo_SFBVie.png
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>Réunion fondatrice — Nice, mars 2026</p>
+    <p><a href="mailto:contact@sfbv.example.org">contact@sfbv.example.org</a></p>
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
+selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 
 announcements:
@@ -27,8 +26,29 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+La **SFBVie** fédère une communauté multidisciplinaire centrée sur les mécanismes fondamentaux du vieillissement et leur translation en stratégies thérapeutiques innovantes, avec une ouverture internationale.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+En tant que société savante scientifique, la SFBVie donne la priorité aux mécanismes causaux du vieillissement, à l'innovation rigoureuse et à la translation vers la médecine et l'industrie, dans un cadre responsable.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+### Ce que nous faisons
+
+- Fédérer la communauté française de biologie du vieillissement.
+- Organiser réunions, congrès, écoles thématiques, formations.
+- Développer des standards ouverts : protocoles, données, reproductibilité.
+- Soutenir les jeunes chercheurs (mentorat, visibilité, prix).
+
+### Ce qui nous différencie
+
+- Focus **biologie fondamentale** + translation (et non soins/clinique).
+- Innovation audacieuse, évaluée avec exigence.
+- Interdisciplinarité sélective : éthique, philosophie, société.
+- Impact mesurable : avancées mécanistiques et trajectoires translationales.
+
+### International
+
+- Coopérations via MoU et sessions conjointes.
+- Échanges de conférenciers et de jeunes chercheurs.
+- Harmonisation des standards et bonnes pratiques.
+- Visibilité croisée avec les sociétés partenaires.
+
+Découvrez nos [groupes thématiques](/projects/), nos [ressources documentaires](/ressources/), et [comment adhérer](/adhesion/) à la SFBVie.
