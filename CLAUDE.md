@@ -12,10 +12,16 @@ This particular checkout is not a generic starter fork — it's the live site fo
 
 Content was adapted from an association template (mission/groups/events/membership), not an academic portfolio, so several stock al-folio pages are deliberately unlinked (`nav: false`) rather than deleted: `cv.md` (personal-CV feature, disabled in `_config.yml` too), `teaching.md`, `repositories.md`, `publications.md` (no real bibliography yet), `dropdown.md` (submenu demo), and `profiles.md` (repurposed as `bureau`, waiting on real board-member data). Content instead lives in `about.md` (mission/landing page), `_projects` (reframed as "groupes thématiques"), `_news` (announcements/events), and two new pages: `ressources.md` (founding documents) and `adhesion.md` (membership).
 
+### Deployment status (last checked 2026-07-23)
+
+- Remote: `origin` → `https://github.com/sfbvie/SFBVie.git`, `main` pushed and up to date (commit `6941da6` at last check). `MichaelRera` was added as a collaborator on the org repo so pushes work with credentials already cached in dev environments — no other auth workaround needed.
+- **GitHub Pages is not yet live** — confirmed via `curl -sS https://api.github.com/repos/sfbvie/SFBVie` returning `"has_pages": false`, and `https://sfbvie.github.io/SFBVie/` 404s. The `deploy.yml` workflow *builds and pushes to `gh-pages`* on every push to `main`, but it does **not** flip the Pages toggle — that's a one-time manual step still outstanding: go to `https://github.com/sfbvie/SFBVie/settings/pages` → Build and deployment → Source → "Deploy from a branch" → branch `gh-pages`, folder `/ (root)` → Save. Once that's done it should stay working for all future pushes.
+- The repo's **default branch is `gh-pages`, not `main`** (confirmed via the GitHub API) — unusual, and worth fixing in Settings → General → Default branch if it causes confused PRs/clones later. Left alone for now since it wasn't blocking anything.
+
 Outstanding TODOs before this is truly launch-ready:
 
 - `_data/socials.yml` and `_pages/about.md` still have literal `TODO`/`example.org` placeholders for the real contact email, Bluesky profile URL (`bluesky_url` needs the **full profile URL**, not a handle), and LinkedIn company page URL (defined as a custom `linkedin_page` entry, not the built-in `linkedin_username` key — that key hardcodes a `/in/<user>` personal-profile URL shape, wrong for a company page).
-- Confirm GitHub Pages is enabled on `sfbvie/SFBVie` (source: `gh-pages` branch, populated automatically by `.github/workflows/deploy.yml` on push to `main`).
+- Enable GitHub Pages per the deployment-status note above — this is the only known blocker for the live URL working.
 - `__resources/` got committed (in the `v0` commit) even though it's scratch source material (the original hand-built static SFBV site, a `.zip`, `__MACOSX`/`.DS_Store` cruft) already migrated into real pages and `assets/pdf/`. Jekyll ignores it at build time (no leading-underscore dir is processed unless declared as a collection or added to `include:`), so it doesn't leak into `_site/`, but consider removing it from the repo (`git rm -r __resources`) now that its content lives in `_pages`/`_projects`/`_news`/`assets/pdf`.
 
 ### Local dev environment gotcha (this sandbox)
