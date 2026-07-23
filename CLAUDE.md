@@ -6,6 +6,22 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 The import above (`AGENTS.md`, which itself defers to `.github/copilot-instructions.md` and `docs/BOUNDARIES.md`) is the canonical short entry point: ownership boundaries, the validated command set, and PR-routing rules. Keep `AGENTS.md` short and ecosystem-neutral — put Claude-specific or longer-form guidance here instead. Everything below is the cross-repo "big picture" that those files assume but don't spell out.
 
+## This checkout: the SFBV site
+
+This particular checkout is not a generic starter fork — it's the live site for the **Société Française de Biologie du Vieillissement (SFBV)**, a French scientific society. It will deploy as a GitHub Pages **root/org page**: repo `sfbv/sfbv.github.io` → `https://sfbv.github.io/` (`baseurl` is intentionally blank in `_config.yml`; the repo must be renamed/created under that exact name for a root page to work — a project-page repo name like `SFBVie` won't serve at the bare domain).
+
+Content was adapted from an association template (mission/groups/events/membership), not an academic portfolio, so several stock al-folio pages are deliberately unlinked (`nav: false`) rather than deleted: `cv.md` (personal-CV feature, disabled in `_config.yml` too), `teaching.md`, `repositories.md`, `publications.md` (no real bibliography yet), `dropdown.md` (submenu demo), and `profiles.md` (repurposed as `bureau`, waiting on real board-member data). Content instead lives in `about.md` (mission/landing page), `_projects` (reframed as "groupes thématiques"), `_news` (announcements/events), and two new pages: `ressources.md` (founding documents) and `adhesion.md` (membership).
+
+Outstanding TODOs before this is truly launch-ready:
+
+- `_data/socials.yml` and `_pages/about.md` still have literal `TODO`/`example.org` placeholders for the real contact email, Bluesky profile URL (`bluesky_url` needs the **full profile URL**, not a handle), and LinkedIn company page URL (defined as a custom `linkedin_page` entry, not the built-in `linkedin_username` key — that key hardcodes a `/in/<user>` personal-profile URL shape, wrong for a company page).
+- The `sfbv` GitHub org and its `sfbv.github.io` repo don't exist yet; this repo needs to be pushed there, and GitHub Pages enabled (source: `gh-pages` branch, populated automatically by the existing `.github/workflows/deploy.yml` on push to `main`).
+- `__resources/` (untracked) holds the original hand-built static SFBV site plus the real founding documents (charte, statuts, dossier de reconnaissance, programme) — source material for the migration above, already copied into `assets/pdf/`. Jekyll ignores it automatically (no leading-underscore dir is processed unless declared as a collection or added to `include:`), but it's a scratch folder, not something to commit.
+
+### Local dev environment gotcha (this sandbox)
+
+`/usr/local/bin/bundle` and `/usr/local/bin/bundler` have a broken shebang (`#!/usr/bin/ruby3.0`, which doesn't exist here — the installed interpreter is `ruby3.2`). Bare `bundle ...` fails with `cannot execute: required file not found`. Workaround: invoke via `ruby3.2 /usr/local/bin/bundle _2.4.20_ <command>` (the `_2.4.20_` pins the bundler version so it doesn't try to self-upgrade to the `Gemfile.lock`-pinned `4.0.6`, which also fails here). Also, the system gem dir isn't writable, so gems install locally: `ruby3.2 /usr/local/bin/bundle config set --local path 'vendor/bundle'` before the first `install`.
+
 ## What this repo is
 
 `al-folio` v1.x is a **thin Jekyll starter**, not a theme. It owns only: starter wiring (`Gemfile`, `_config.yml`, `_data/featured_plugins.yml`), example content (`_pages`, `_posts`, `_projects`, `_news`, `_teachings`, `_books`, `_bibliography`), docs (`docs/`), cross-gem integration tests (`test/integration_*.sh`), and visual/parity tests (`test/visual/`). **All runtime, layouts, includes, Sass, tags, filters, and feature JS live in versioned gems**, published independently on RubyGems. `docs/BOUNDARIES.md` is the authoritative area→gem ownership table.
