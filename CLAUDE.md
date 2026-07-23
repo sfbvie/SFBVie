@@ -8,15 +8,15 @@ The import above (`AGENTS.md`, which itself defers to `.github/copilot-instructi
 
 ## This checkout: the SFBV site
 
-This particular checkout is not a generic starter fork — it's the live site for the **Société Française de Biologie du Vieillissement (SFBV)**, a French scientific society. It will deploy as a GitHub Pages **root/org page**: repo `sfbv/sfbv.github.io` → `https://sfbv.github.io/` (`baseurl` is intentionally blank in `_config.yml`; the repo must be renamed/created under that exact name for a root page to work — a project-page repo name like `SFBVie` won't serve at the bare domain).
+This particular checkout is not a generic starter fork — it's the live site for the **Société Française de Biologie du Vieillissement (SFBV)**, a French scientific society. It deploys as a GitHub Pages **project page**: repo `sfbvie/SFBVie` → `https://sfbvie.github.io/SFBVie/` (`url`/`baseurl` in `_config.yml` are set accordingly). A root/org page (`https://sfbvie.github.io/`) was considered but would require the repo itself to be named exactly `sfbvie.github.io`, which isn't what was created — if that's ever done, flip `baseurl` back to blank and `url` to `https://sfbvie.github.io`.
 
 Content was adapted from an association template (mission/groups/events/membership), not an academic portfolio, so several stock al-folio pages are deliberately unlinked (`nav: false`) rather than deleted: `cv.md` (personal-CV feature, disabled in `_config.yml` too), `teaching.md`, `repositories.md`, `publications.md` (no real bibliography yet), `dropdown.md` (submenu demo), and `profiles.md` (repurposed as `bureau`, waiting on real board-member data). Content instead lives in `about.md` (mission/landing page), `_projects` (reframed as "groupes thématiques"), `_news` (announcements/events), and two new pages: `ressources.md` (founding documents) and `adhesion.md` (membership).
 
 Outstanding TODOs before this is truly launch-ready:
 
 - `_data/socials.yml` and `_pages/about.md` still have literal `TODO`/`example.org` placeholders for the real contact email, Bluesky profile URL (`bluesky_url` needs the **full profile URL**, not a handle), and LinkedIn company page URL (defined as a custom `linkedin_page` entry, not the built-in `linkedin_username` key — that key hardcodes a `/in/<user>` personal-profile URL shape, wrong for a company page).
-- The `sfbv` GitHub org and its `sfbv.github.io` repo don't exist yet; this repo needs to be pushed there, and GitHub Pages enabled (source: `gh-pages` branch, populated automatically by the existing `.github/workflows/deploy.yml` on push to `main`).
-- `__resources/` (untracked) holds the original hand-built static SFBV site plus the real founding documents (charte, statuts, dossier de reconnaissance, programme) — source material for the migration above, already copied into `assets/pdf/`. Jekyll ignores it automatically (no leading-underscore dir is processed unless declared as a collection or added to `include:`), but it's a scratch folder, not something to commit.
+- Confirm GitHub Pages is enabled on `sfbvie/SFBVie` (source: `gh-pages` branch, populated automatically by `.github/workflows/deploy.yml` on push to `main`).
+- `__resources/` got committed (in the `v0` commit) even though it's scratch source material (the original hand-built static SFBV site, a `.zip`, `__MACOSX`/`.DS_Store` cruft) already migrated into real pages and `assets/pdf/`. Jekyll ignores it at build time (no leading-underscore dir is processed unless declared as a collection or added to `include:`), so it doesn't leak into `_site/`, but consider removing it from the repo (`git rm -r __resources`) now that its content lives in `_pages`/`_projects`/`_news`/`assets/pdf`.
 
 ### Local dev environment gotcha (this sandbox)
 
