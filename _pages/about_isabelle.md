@@ -1,0 +1,5 @@
+Isabelle Ader est physiologiste et chercheuse à l'Inserm au sein de l'Institut RESTORE à Toulouse, et membre du board de l'IHU HealthAge. Ses travaux visent à identifier des biomarqueurs et à mieux comprendre les mécanismes biologiques qui contribuent au maintien de la santé et des capacités fonctionnelles au cours du vieillissement.
+
+Dans une perspective intégrative, elle développe des études multi-échelles, de la cellule à l'organisme entier, principalement à partir de cohortes humaines. Elle s'appuie également sur des modèles vertébrés et invertébrés afin d'explorer les mécanismes moléculaires à l'origine des différentes trajectoires de vieillissement.
+
+Ses recherches associent métabolisme énergétique, homéostasie redox, biologie cellulaire, intelligence artificielle et modélisation statistique. Par cette approche translationnelle et multidisciplinaire, elle contribue au développement d'une biologie du vieillissement centrée sur la compréhension des processus favorisant un vieillissement en bonne santé.

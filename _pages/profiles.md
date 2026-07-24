@@ -12,4 +12,9 @@ profiles:
     more_info: >
       <p>Michael Rera</p>
       <p>Co-fondateur — Biologie Fonctionnelle et Adaptative (BFA)</p>
+  - align: left
+    content: about_isabelle.md
+    more_info: >
+      <p>Isabelle Ader</p>
+      <p>Institut RESTORE, Toulouse — IHU HealthAge</p>
 ---
