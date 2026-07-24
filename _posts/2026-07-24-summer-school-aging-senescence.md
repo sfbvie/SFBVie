@@ -6,7 +6,7 @@ description: École d'été internationale sur le vieillissement et la sénescen
 related_posts: false
 ---
 
-La SFBVie est fière de s'associer à la Summer School internationale **"Aging & Senescence: From Evolution to Disease"**, organisée dans le cadre du DU ALIVE (*Aging, Life-course and VulnErabilities*).
+La SFBVie est fière de s'associer à la Summer School internationale **"Aging & Senescence: From Evolution to Disease"**, organisée dans le cadre du DU ALIVE (_Aging, Life-course and VulnErabilities_).
 
 > Comprendre les mécanismes du vieillissement pour mieux s'y attaquer.
 

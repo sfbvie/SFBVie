@@ -16,3 +16,7 @@ nav_order: 4
 ### Programme
 
 - [Programme premium (DOCX)]({{ '/assets/pdf/programme_premium.docx' | relative_url }})
+
+### Liens
+
+- [Evol-net — Ageing Conferences](https://evol-net.fr/2025/07/17/ageing-conferences/) : historique des colloques "Expanding evolutionary theories of ageing to take into account symbioses and interactions throughout the Web of Life" (éditions 2022-2025).
