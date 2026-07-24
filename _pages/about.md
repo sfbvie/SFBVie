@@ -6,10 +6,11 @@ subtitle: Société savante nationale dédiée à la biologie fondamentale du vi
 
 profile:
   align: right
-  image: logo_SFBVie.png
+  image: logo_SFBVie.png # light-mode logo (blue/green on white)
+  image_dark: logo_SFBVie_black.png # dark-mode logo (warm tones on black)
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>Réunion fondatrice — Nice, mars 2026</p>
+    <p>Réunion fondatrice — Créteil, mars 2026</p>
     <p><a href="mailto:contact@sfbv.example.org">contact@sfbv.example.org</a></p>
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
