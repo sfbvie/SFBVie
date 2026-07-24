@@ -231,7 +231,8 @@ exclude:
   - lighthouse_results/
   - package.json
   - package-lock.json
-  - _pages/about_einstein.md
+  - _pages/about_rera.md
+  - _pages/about_isabelle.md
   - purgecss.config.js
   - README.md
   - readme_preview/
