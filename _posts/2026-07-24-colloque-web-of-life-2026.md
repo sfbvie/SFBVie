@@ -4,6 +4,8 @@ title: "5e colloque : Expanding evolutionary theories of ageing to take into acc
 date: 2026-07-24 10:00:00+0200
 description: Colloque international co-organisé par Eric Bapteste et Michael Rera, 4 novembre 2026, Sorbonne Université.
 related_posts: false
+tags: colloque evolution ecologie symbiose
+categories: evenements
 ---
 
 La SFBVie relaie avec plaisir l'invitation à la 5e édition de ce colloque international, co-organisé par **Eric Bapteste** (Sorbonne Université) et **Michael Rera** (SFBVie), qui aura lieu le **4 novembre 2026** à l'Université Jussieu (campus Jussieu, Sorbonne Université, Paris).
