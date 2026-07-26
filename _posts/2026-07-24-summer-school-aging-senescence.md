@@ -4,6 +4,7 @@ title: "Summer School : Aging & Senescence — From Evolution to Disease"
 date: 2026-07-24 09:00:00+0200
 description: École d'été internationale sur le vieillissement et la sénescence, 24-25 septembre 2026, Créteil.
 related_posts: false
+featured: true
 ---
 
 La SFBVie est fière de s'associer à la Summer School internationale **"Aging & Senescence: From Evolution to Disease"**, organisée dans le cadre du DU ALIVE (_Aging, Life-course and VulnErabilities_).
