@@ -10,13 +10,21 @@ The import above (`AGENTS.md`, which itself defers to `.github/copilot-instructi
 
 This particular checkout is not a generic starter fork — it's the live site for the **Société Française de Biologie du Vieillissement (SFBV)**, a French scientific society. It deploys as a GitHub Pages **project page**: repo `sfbvie/SFBVie` → `https://sfbvie.github.io/SFBVie/` (`url`/`baseurl` in `_config.yml` are set accordingly). A root/org page (`https://sfbvie.github.io/`) was considered but would require the repo itself to be named exactly `sfbvie.github.io`, which isn't what was created — if that's ever done, flip `baseurl` back to blank and `url` to `https://sfbvie.github.io`.
 
-Content was adapted from an association template (mission/groups/events/membership), not an academic portfolio, so several stock al-folio pages are deliberately unlinked (`nav: false`) rather than deleted: `cv.md` (personal-CV feature, disabled in `_config.yml` too), `teaching.md`, `repositories.md`, `publications.md` (no real bibliography yet), `dropdown.md` (submenu demo), and `profiles.md` (repurposed as `bureau`, waiting on real board-member data). Content instead lives in `about.md` (mission/landing page), `_projects` (reframed as "groupes thématiques"), `_news` (announcements/events), and two new pages: `ressources.md` (founding documents) and `adhesion.md` (membership).
+Content was adapted from an association template (mission/groups/events/membership), not an academic portfolio, so several stock al-folio pages are deliberately unlinked (`nav: false`) rather than deleted: `cv.md` (personal-CV feature, disabled in `_config.yml` too), `teaching.md`, `repositories.md`, `publications.md` (no real bibliography yet), and `dropdown.md` (submenu demo). Content instead lives in `about.md` (mission/landing page), `_projects` (reframed as "groupes thématiques"), `_news` (announcements/events), `profiles.md` (repurposed as `bureau` at `/people/`, now populated with real board members — see 2026-07-26 session below), and two new pages: `ressources.md` (founding documents) and `adhesion.md` (membership).
 
-### Deployment status (last checked 2026-07-23)
+### Deployment status (last checked 2026-07-26)
 
-- Remote: `origin` → `https://github.com/sfbvie/SFBVie.git`, `main` pushed and up to date (commit `6941da6` at last check). `MichaelRera` was added as a collaborator on the org repo so pushes work with credentials already cached in dev environments — no other auth workaround needed.
-- **GitHub Pages is not yet live** — confirmed via `curl -sS https://api.github.com/repos/sfbvie/SFBVie` returning `"has_pages": false`, and `https://sfbvie.github.io/SFBVie/` 404s. The `deploy.yml` workflow _builds and pushes to `gh-pages`_ on every push to `main`, but it does **not** flip the Pages toggle — that's a one-time manual step still outstanding: go to `https://github.com/sfbvie/SFBVie/settings/pages` → Build and deployment → Source → "Deploy from a branch" → branch `gh-pages`, folder `/ (root)` → Save. Once that's done it should stay working for all future pushes.
-- The repo's **default branch is `gh-pages`, not `main`** (confirmed via the GitHub API) — unusual, and worth fixing in Settings → General → Default branch if it causes confused PRs/clones later. Left alone for now since it wasn't blocking anything.
+- Remote: `origin` → `https://github.com/sfbvie/SFBVie.git`, `main` pushed and up to date. `MichaelRera` was added as a collaborator on the org repo, but pushing still needs a per-machine auth step — see the "Pushing from a new machine" note below.
+- **GitHub Pages is now live**: `curl -sS https://api.github.com/repos/sfbvie/SFBVie` returns `"has_pages": true`, and `https://sfbvie.github.io/SFBVie/` serves 200. The Pages-toggle blocker noted in earlier sessions is resolved.
+- The repo's **default branch is still `gh-pages`, not `main`** (confirmed via the GitHub API) — unusual, and worth fixing in Settings → General → Default branch if it causes confused PRs/clones later. Left alone for now since it wasn't blocking anything. **Always edit source on `main`** — `gh-pages` is CI-built output only; do not hand-edit it (see the "Which branch to edit" note below, added after a session that briefly started editing on `gh-pages` by mistake).
+
+#### Which branch to edit
+
+`git status`/`git branch` can land you on `gh-pages` by default (see above). Before editing anything, confirm with `git branch --show-current` — if it says `gh-pages`, `git checkout main` first. `gh-pages` is only ever written by the `deploy.yml` GitHub Action; hand edits there are silently overwritten on the next push to `main` and never make it into `main`'s history.
+
+#### Pushing from a new machine
+
+A fresh dev machine/container has no cached GitHub credentials by default, so `git push` fails with `fatal: could not read Username`. The working flow (used successfully in the 2026-07-26 session): install/locate the `gh` CLI, then run `gh auth login --web` (needs `--web` explicitly — the harness's bash tool isn't a TTY, so plain `gh auth login` errors with "--web or --with-token required when not running interactively"). That prints a one-time code and opens the browser device flow; once `gh` reports "Logged in as ...", run `gh auth setup-git` so plain `git push`/`git pull` over HTTPS pick up the token, no separate credential-helper config needed.
 
 ### Privacy audit (2026-07-24)
 
@@ -24,13 +32,36 @@ Ran a full check for real personal data after the site went public. The founding
 
 Outstanding TODOs before this is truly launch-ready:
 
-- `_data/socials.yml` and `_pages/about.md` still have literal `TODO`/`example.org` placeholders for the real contact email, Bluesky profile URL (`bluesky_url` needs the **full profile URL**, not a handle), and LinkedIn company page URL (defined as a custom `linkedin_page` entry, not the built-in `linkedin_username` key — that key hardcodes a `/in/<user>` personal-profile URL shape, wrong for a company page).
-- Enable GitHub Pages per the deployment-status note above — this is the only known blocker for the live URL working.
-- Removing all the stock demo posts changes what the visual-regression baseline expects on `/blog/`; `npm run test:visual:update` may be needed to refresh Playwright snapshots (not run here — see the no-local-rendering note below).
+- Real contact email (`sfbvie@services.cnrs.fr`), Bluesky (`https://bsky.app/profile/sfbvie.bsky.social`), and LinkedIn company page (`https://www.linkedin.com/company/sfbvie/`) are now set in `_data/socials.yml` / `about.md` / `adhesion.md` — the `TODO`/`example.org` placeholders from this note are resolved (2026-07-26 session). The RSS icon (`rss_icon`) was intentionally removed rather than filled in.
+- GitHub Pages is enabled — see deployment-status note above.
+- Removing all the stock demo posts changes what the visual-regression baseline expects on `/blog/`; `npm run test:visual:update` may still be needed to refresh Playwright snapshots (not run yet in any session — local rendering works on at least one dev machine now, see below, so this is doable next time UI changes need a visual-diff check).
 
-### Don't try local Jekyll rendering
+### Local Jekyll rendering: machine-dependent
 
-The user has said Ruby isn't reliable in their environment and asked to stop attempting local `bundle`/`jekyll build`/`jekyll serve` verification here going forward. A prior session did get it working (see git history around commit `7f6a39a` if this is ever revisited) via a workaround for a broken `/usr/local/bin/bundle` shebang and a non-writable system gem dir, but don't spend time on that again unless explicitly asked — verify changes by reading gem source / Liquid syntax carefully instead, and let the `deploy.yml` GitHub Actions pipeline be the real build check.
+Whether `bundle`/`jekyll serve`/`jekyll build` work locally **depends on which machine you're on** — this is not a fixed repo-wide fact, so check fresh each session rather than trusting a past note:
+
+- One earlier dev machine had an unreliable Ruby setup; the user asked to stop attempting local verification there and rely on the `deploy.yml` GitHub Actions pipeline instead (a prior session did get it working there via a workaround for a broken `/usr/local/bin/bundle` shebang and a non-writable system gem dir — see git history around commit `7f6a39a` if that machine's setup is ever revisited).
+- On the machine used in the 2026-07-26 session (Ruby 3.0.2, gems under `~/gems`), `bundle install` + `bundle exec jekyll serve --port 4000` worked fine and is the preferred way to verify changes (page content, image rendering, Liquid logic, tag/category links) before pushing — confirm with a plain HTTP request, e.g. `curl -fsS http://127.0.0.1:4000/SFBVie/blog/`.
+- **Gemfile.lock is machine-specific here and must not be committed from a local session.** This machine's Ruby resolves several gems to older versions than the lockfile checked into `main` (e.g. `activesupport 7.0.10` vs `7.2.3.1`, `jekyll-sass-converter 2.2.0` vs `3.1.0`). Running `bundle install` rewrites `Gemfile.lock` to match locally installed gems every time. Always `git checkout -- Gemfile.lock` before any `git add`/`git commit` on this machine, or the commit will silently downgrade pins for every other environment (CI, other dev machines).
+- `_config.yml` edits are **not** hot-reloaded by `jekyll serve --watch`; a config change requires killing and restarting the server for the new value to take effect (page/include/post edits do hot-reload).
+- The `.codex/skills`/`.claude/skills` → `.agents/skills` symlinks trigger a harmless `** ERROR: directory is already being watched! **` from the `listen` gem on every serve/rebuild — cosmetic, ignore it.
+- `test/integration_distill.sh` and `test/integration_comments.sh` both ran clean locally on this machine after the 2026-07-26 changes (see below) — a useful pre-push check whenever a change might affect the `2018-12-22-distill.md` / `2015-10-20-disqus-comments.md` / `2022-12-10-giscus-comments.md` posts, since those exact pages are asserted to exist by those scripts.
+
+### Session log: bureau photos, groupes thématiques rewrite, content cleanup (2026-07-26)
+
+Content-focused session (no gem/runtime changes), across several pushes to `main` (`20e78a0`..`71c079d`):
+
+- **Bureau (`/people/`)**: added real photos (`assets/img/eric_gilson.jpg`, `isabelle_ader.png`, `michael_rera.jpg` — Michael's copied from his `michaelrera.github.io` repo's `prof_pic.jpg`) and Eric Gilson's bio (`_pages/about_gilson.md`). Order is Gilson → Ader → Rera; the inaccurate "Co-fondateur" credit was dropped from Rera's entry per his own correction.
+- **Groupes thématiques (`_projects/*_groupe.md`)**: replaced the original 3 siloed groups with 6 non-siloed cross-cutting groups per Eric Gilson's review comment (mécanismes biologiques; mesure et trajectoires de santé/applications médicales; evolution et écologie; biologie des systèmes/modélisation/IA; philosophie et sociologie; formation/intégrité/science ouverte), each carrying his full keyword list. One typo in his source text was silently corrected: "défense de l'hôtel" → "défense de l'hôte" (host defense).
+- **Actualités (`/blog/`) cleanup**:
+  - Featured card swapped from the stock "a distill-style blog post" demo to the real Summer School announcement (`featured: true` moved between posts' front matter).
+  - Removed the `external_sources` block from `_config.yml` entirely (al-folio's own Medium RSS feed + a Google Gemini press-release stub) — pure stock demo content, no CI dependency.
+  - The three remaining al-folio sample posts (`2018-12-22-distill.md`, `2015-10-20-disqus-comments.md`, `2022-12-10-giscus-comments.md`) are hidden from the listing via a custom `hide_from_list: true` front-matter flag + a `where_exp` filter added in `_pages/blog.md`, **not deleted or unpublished** — `test/integration_distill.sh` and `test/integration_comments.sh` assert those exact generated pages exist, so removal/unpublishing would break CI. This is the pattern to reuse if more stock posts need hiding later.
+  - `_config.yml`'s `blog_name`/`blog_description` (leftover `al-folio` / theme tagline) replaced with real SFBVie branding.
+  - `display_tags`/`display_categories` (also `_config.yml`) replaced with real keywords now that the two real posts carry matching `tags`/`categories` front matter (`formation`, `senescence`, `evolution`, `ecologie`, `symbiose`, `colloque`; category `evenements`) — the old stock list (`formatting`, `images`, `math`, …) pointed at now-empty archive pages once the sample posts were hidden.
+- **Contact/socials**: real address `sfbvie@services.cnrs.fr` set in `_data/socials.yml`, `about.md`, `adhesion.md` (was `contact@sfbv.example.org`). Real Bluesky/LinkedIn URLs set (see outstanding-TODOs update above). RSS icon (`rss_icon`) removed rather than resolved.
+- **Nav wording**: "about" → "à propos" for consistency with the rest of the French-language nav (`actualités`, `groupes thématiques`, `ressources`, `adhésion`, `bureau`).
+- **Asset audit**: no byte-identical duplicate files found in `assets/img`, but a batch of leftover al-folio stock demo assets are now unreferenced by any content since the privacy-audit post purge — `assets/img/2.jpg`-`12.jpg`, `prof_pic_color.png`, `assets/json/table_data.json`, `assets/jupyter/blog.ipynb`, `assets/audio/epicaly-short-113909.mp3`, `assets/video/pexels-engin-akyurt-*.mp4`. Flagged to the user but **not deleted** — no decision made yet on whether to clean these up.
 
 ## What this repo is
 
