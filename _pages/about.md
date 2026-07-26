@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: à propos
 permalink: /
 subtitle: Société savante nationale dédiée à la biologie fondamentale du vieillissement, ouverte à l'international.
 
@@ -31,7 +31,7 @@ latest_posts:
   {% include figure.liquid loading="eager" path="assets/img/logo_SFBVie_black.png" class="img-fluid z-depth-1 rounded only-dark" sizes=sizes alt="Logo SFBVie" cache_bust=true %}
   <div class="more-info">
     <p>Réunion fondatrice — Créteil, mars 2026</p>
-    <p><a href="mailto:contact@sfbv.example.org">contact@sfbv.example.org</a></p>
+    <p><a href="mailto:sfbvie@services.cnrs.fr">sfbvie@services.cnrs.fr</a></p>
   </div>
 </div>
 

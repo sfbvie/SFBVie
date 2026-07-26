@@ -1,7 +1,7 @@
 # this file contains the social media links and usernames of the author
 # the socials will be displayed in the order they are defined here
 # for more information, please refer to the documentation of jekyll-socials plugin: https://github.com/george-gca/jekyll-socials
-email: contact@sfbv.example.org # TODO: replace with SFBV's real contact email
+email: sfbvie@services.cnrs.fr
 rss_icon: true # comment this line to hide the RSS icon
 bluesky_url: https://bsky.app/profile/TODO.bsky.social # TODO: full profile URL of the SFBV Bluesky account
 # linkedin_username builds https://www.linkedin.com/in/<value> (personal-profile URL shape), which is wrong
