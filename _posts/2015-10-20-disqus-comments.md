@@ -7,6 +7,7 @@ tags: comments
 categories: sample-posts external-services
 disqus_comments: true
 related_posts: false
+hide_from_list: true
 ---
 
 This post shows how to add DISQUS comments.
