@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Stratégies thérapeutiques & translation
-description: Groupe 2 — senomorphiques, reprogrammation partielle, modulation immunitaire, interventions épigénétiques, biomatériaux.
+title: Mesure et trajectoires de santé, applications médicales
+description: Groupe 2 — capacités intrinsèques, maladies liées à l'âge, âge biologique, cohortes, prévention personnalisée, sénothérapies, géroscience et géromédecine.
 importance: 2
 category: groupes
 ---
 
-Senomorphiques, reprogrammation partielle, modulation immunitaire, interventions épigénétiques, biomatériaux…
+Capacités intrinsèques • maladies liées à l'âge • âge biologique • cohortes • prévention personnalisée • sénothérapies • géroscience et géromédecine
 
-Ce groupe thématique porte sur la translation des découvertes fondamentales vers des stratégies thérapeutiques innovantes.
+Ce groupe thématique porte sur la mesure et les trajectoires de santé au cours du vieillissement, et sur leurs applications médicales pour un vieillissement en bonne santé.

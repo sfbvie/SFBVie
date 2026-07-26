@@ -8,13 +8,24 @@ nav_order: 7
 
 profiles:
   - align: right
-    content: about_rera.md
+    image: eric_gilson.jpg
+    image_circular: true
+    content: about_gilson.md
     more_info: >
-      <p>Michael Rera</p>
-      <p>Co-fondateur — Biologie Fonctionnelle et Adaptative (BFA)</p>
+      <p>Eric Gilson</p>
+      <p>IRCAN, Université Côte d'Azur — CHU de Nice</p>
   - align: left
+    image: isabelle_ader.png
+    image_circular: true
     content: about_isabelle.md
     more_info: >
       <p>Isabelle Ader</p>
       <p>Institut RESTORE, Toulouse — IHU HealthAge</p>
+  - align: right
+    image: michael_rera.jpg
+    image_circular: true
+    content: about_rera.md
+    more_info: >
+      <p>Michael Rera</p>
+      <p>Biologie Fonctionnelle et Adaptative (BFA)</p>
 ---

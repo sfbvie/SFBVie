@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Éthique, société & interdisciplinarité
-description: Groupe 3 — cadres éthiques, intégrité scientifique, dialogue avec la société civile, philosophie des sciences.
+title: Evolution et écologie
+description: Groupe 3 — théories de l'évolution du vieillissement, étude en milieu naturel, biologie comparée, écologie du microbiote.
 importance: 3
 category: groupes
 ---
 
-Cadres éthiques, intégrité scientifique, dialogue avec la société civile, philosophie des sciences.
+Théories de l'évolution du vieillissement • étude en milieu naturel • biologie comparée du vieillissement • vieillissement et santé des écosystèmes • écologie du microbiote
 
-Ce groupe thématique interroge les dimensions éthiques et sociétales du vieillissement et de sa recherche.
+Ce groupe thématique explore le vieillissement à travers le prisme de l'évolution et de l'écologie.
