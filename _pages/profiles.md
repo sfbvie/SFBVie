@@ -35,4 +35,11 @@ profiles:
     more_info: >
       <p>Alexandre Ottaviani</p>
       <p>IRCAN, Université Côte d'Azur</p>
+  - align: right
+    image: bertrand_friguet.jpg
+    image_circular: true
+    content: about_friguet.md
+    more_info: >
+      <p>Bertrand Friguet</p>
+      <p>Sorbonne Université</p>
 ---
