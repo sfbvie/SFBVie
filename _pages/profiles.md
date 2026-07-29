@@ -28,4 +28,11 @@ profiles:
     more_info: >
       <p>Michael Rera</p>
       <p>Biologie Fonctionnelle et Adaptative (BFA)</p>
+  - align: left
+    image: alexandre_ottaviani.jpg
+    image_circular: true
+    content: about_ottaviani.md
+    more_info: >
+      <p>Alexandre Ottaviani</p>
+      <p>IRCAN, Université Côte d'Azur</p>
 ---
