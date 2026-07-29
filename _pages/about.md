@@ -61,3 +61,35 @@ En tant que société savante scientifique, la SFBVie donne la priorité aux mé
 - Visibilité croisée avec les sociétés partenaires.
 
 Découvrez nos [groupes thématiques]({{ '/projects/' | relative_url }}), nos [ressources documentaires]({{ '/ressources/' | relative_url }}), et [comment adhérer]({{ '/adhesion/' | relative_url }}) à la SFBVie.
+
+### En partenariat avec
+
+<div class="partner-logos">
+  <span class="partner-logo-chip"><img src="{{ '/assets/img/logo_cnrs.png' | relative_url }}" alt="CNRS" loading="lazy"></span>
+  <span class="partner-logo-chip"><img src="{{ '/assets/img/logo_inserm.png' | relative_url }}" alt="Inserm" loading="lazy"></span>
+</div>
+
+<style>
+  .partner-logos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 1rem 0 2rem;
+  }
+  .partner-logo-chip {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 64px;
+    padding: 0.5rem 1.25rem;
+    background: #ffffff;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+  }
+  .partner-logo-chip img {
+    height: 100%;
+    width: auto;
+  }
+</style>
