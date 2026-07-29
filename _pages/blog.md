@@ -109,6 +109,7 @@ pagination:
       {% assign postlist = site.posts %}
     {% endif %}
     {% assign postlist = postlist | where_exp: "post", "post.hide_from_list != true" %}
+    {% assign postlist = postlist | where_exp: "post", "post.featured != true" %}
 
     {% for post in postlist %}
 
