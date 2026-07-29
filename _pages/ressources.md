@@ -10,8 +10,7 @@ nav_order: 4
 ### Documents
 
 - [Charte scientifique & éthique (PDF)]({{ '/assets/pdf/charte_sfbv.pdf' | relative_url }})
-- [Statuts (DOCX)]({{ '/assets/pdf/statuts_sfbv.docx' | relative_url }})
-- [Dossier de reconnaissance (DOCX)]({{ '/assets/pdf/dossier_reconnaissance.docx' | relative_url }})
+- [Statuts (PDF)]({{ '/assets/pdf/statuts_sfbv.pdf' | relative_url }})
 
 ### Programme
 
