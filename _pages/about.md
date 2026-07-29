@@ -15,7 +15,7 @@ announcements:
 latest_posts:
   enabled: true
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 2 # only 2 real posts exist so far (the al-folio sample posts are hidden from /blog/ but not filtered here); bump back up to 3+ once a 3rd real post is published
+  limit: 3 # 3 real posts exist so far (the al-folio sample posts are hidden from /blog/ but not filtered here); bump this up whenever a new real post is published
 ---
 
 <!--
