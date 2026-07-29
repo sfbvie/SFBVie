@@ -8,7 +8,7 @@ pagination:
   enabled: true
   collection: posts
   permalink: /page/:num/
-  per_page: 5
+  per_page: 10 # raw post-file count, before the hide_from_list/featured filters below run; keep above (hidden stock posts + featured posts + real posts) so real actualités never spill onto a near-empty page 2 — see CLAUDE.md session log
   sort_field: date
   sort_reverse: true
   trail:
