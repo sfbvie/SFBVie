@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://sfbvie.github.io/SFBVie/sitemap.xml
+Sitemap: https://sfbvie.fr/sitemap.xml
