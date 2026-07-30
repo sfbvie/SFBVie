@@ -29,24 +29,24 @@ profiles:
       <p>Michael Rera</p>
       <p>Biologie Fonctionnelle et Adaptative (BFA)</p>
   - align: left
-    image: alexandre_ottaviani.jpg
-    image_circular: true
-    content: about_ottaviani.md
-    more_info: >
-      <p>Alexandre Ottaviani</p>
-      <p>IRCAN, Université Côte d'Azur</p>
-  - align: right
-    image: bertrand_friguet.jpg
-    image_circular: true
-    content: about_friguet.md
-    more_info: >
-      <p>Bertrand Friguet</p>
-      <p>Sorbonne Université</p>
-  - align: left
     image: helena_izquierdo_fernandez.jpg
     image_circular: true
     content: about_izquierdo.md
     more_info: >
       <p>Helena Izquierdo Fernández</p>
       <p>Institut Curie, Paris</p>
+  - align: right
+    image: alexandre_ottaviani.jpg
+    image_circular: true
+    content: about_ottaviani.md
+    more_info: >
+      <p>Alexandre Ottaviani</p>
+      <p>IRCAN, Université Côte d'Azur</p>
+  - align: left
+    image: bertrand_friguet.jpg
+    image_circular: true
+    content: about_friguet.md
+    more_info: >
+      <p>Bertrand Friguet</p>
+      <p>Sorbonne Université</p>
 ---
