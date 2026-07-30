@@ -32,7 +32,7 @@ Ran a full check for real personal data after the site went public. The founding
 
 Outstanding TODOs before this is truly launch-ready:
 
-- Real contact email (`sfbvie@services.cnrs.fr`), Bluesky (`https://bsky.app/profile/sfbvie.bsky.social`), and LinkedIn company page (`https://www.linkedin.com/company/sfbvie/`) are now set in `_data/socials.yml` / `about.md` / `adhesion.md` — the `TODO`/`example.org` placeholders from this note are resolved (2026-07-26 session). The RSS icon (`rss_icon`) was intentionally removed rather than filled in.
+- Real contact email, Bluesky (`https://bsky.app/profile/sfbvie.bsky.social`), and LinkedIn company page (`https://www.linkedin.com/company/sfbvie/`) are set in `_data/socials.yml` / `about.md` / `adhesion.md` — the `TODO`/`example.org` placeholders from this note are resolved (2026-07-26 session). The RSS icon (`rss_icon`) was intentionally removed rather than filled in. **Contact email changed again 2026-07-30**, from `sfbvie@services.cnrs.fr` to `contact@sfbvie.fr` (now that the site has its own domain — see the sfbvie.fr migration session below).
 - GitHub Pages is enabled — see deployment-status note above.
 - Removing all the stock demo posts changes what the visual-regression baseline expects on `/blog/`; `npm run test:visual:update` may still be needed to refresh Playwright snapshots (not run yet in any session — local rendering works on at least one dev machine now, see below, so this is doable next time UI changes need a visual-diff check).
 
