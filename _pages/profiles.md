@@ -42,4 +42,11 @@ profiles:
     more_info: >
       <p>Bertrand Friguet</p>
       <p>Sorbonne Université</p>
+  - align: left
+    image: helena_izquierdo_fernandez.jpg
+    image_circular: true
+    content: about_izquierdo.md
+    more_info: >
+      <p>Helena Izquierdo Fernández</p>
+      <p>Institut Curie, Paris</p>
 ---
