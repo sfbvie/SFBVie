@@ -12,7 +12,7 @@ nav_order: 4
 - [Charte scientifique & éthique (PDF)]({{ '/assets/pdf/charte_sfbv.pdf' | relative_url }})
 - [Statuts (PDF)]({{ '/assets/pdf/statuts_sfbv.pdf' | relative_url }})
 
-### Programme
+### Programme de la 1ère journée de lancement de la SFBVie
 
 - [Programme SFBVie — 19 juin 2026 (PDF)]({{ '/assets/pdf/programme_sfbvie_19_juin_2026.pdf' | relative_url }})
 

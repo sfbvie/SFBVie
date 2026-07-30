@@ -10,4 +10,4 @@ Présentation de la mission et de la charte scientifique, lancement des groupes 
 
 **Lieu :** Créteil · **Date :** mars 2026 · **Format :** 2 jours
 
-Consultez le [programme (DOCX)]({{ '/assets/pdf/programme_premium.docx' | relative_url }}) et les [ressources documentaires]({{ '/ressources/' | relative_url }}) de la SFBVie.
+Consultez le [programme (PDF)]({{ '/assets/pdf/programme_sfbvie_19_juin_2026.pdf' | relative_url }}) et les [ressources documentaires]({{ '/ressources/' | relative_url }}) de la SFBVie.
