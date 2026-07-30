@@ -14,7 +14,7 @@ nav_order: 4
 
 ### Programme
 
-- [Programme premium (DOCX)]({{ '/assets/pdf/programme_premium.docx' | relative_url }})
+- [Programme SFBVie — 19 juin 2026 (PDF)]({{ '/assets/pdf/programme_sfbvie_19_juin_2026.pdf' | relative_url }})
 
 ### Liens
 
