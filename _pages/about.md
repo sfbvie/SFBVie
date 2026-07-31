@@ -64,18 +64,33 @@ Découvrez nos [groupes thématiques]({{ '/projects/' | relative_url }}), nos [r
 ### En partenariat avec
 
 <div class="partner-logos">
-  <span class="partner-logo-chip"><img src="{{ '/assets/img/logo_cnrs.png' | relative_url }}" alt="CNRS" loading="lazy"></span>
-  <span class="partner-logo-chip"><img src="{{ '/assets/img/logo_inserm.png' | relative_url }}" alt="Inserm" loading="lazy"></span>
+  <div class="partner-logo-col">
+    <a class="partner-logo-chip" href="https://www.cnrs.fr" target="_blank" rel="noopener">
+      <img src="{{ '/assets/img/logo_cnrs.png' | relative_url }}" alt="CNRS" loading="lazy">
+    </a>
+  </div>
+  <div class="partner-logo-col">
+    <a class="partner-logo-chip" href="https://www.inserm.fr" target="_blank" rel="noopener">
+      <img src="{{ '/assets/img/logo_inserm.png' | relative_url }}" alt="Inserm" loading="lazy">
+    </a>
+    <p class="partner-logo-caption">Instituts thématiques BRCDE et PMN</p>
+  </div>
 </div>
 
 <style>
   .partner-logos {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     gap: 1.5rem;
     margin: 1rem 0 2rem;
+  }
+  .partner-logo-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
   }
   .partner-logo-chip {
     display: inline-flex;
@@ -90,5 +105,11 @@ Découvrez nos [groupes thématiques]({{ '/projects/' | relative_url }}), nos [r
   .partner-logo-chip img {
     height: 100%;
     width: auto;
+  }
+  .partner-logo-caption {
+    margin: 0;
+    font-size: 0.8rem;
+    color: var(--global-text-color-light);
+    text-align: center;
   }
 </style>
