@@ -22,8 +22,10 @@ latest_posts:
 
 <style>
   .lang-toggle {
-    display: inline-block;
-    margin-bottom: 1rem;
+    position: fixed;
+    top: 0.6rem;
+    right: 4.5rem;
+    z-index: 1051;
     padding: 0.3rem 0.75rem;
     font-size: 0.8rem;
     color: var(--global-text-color);
@@ -31,6 +33,14 @@ latest_posts:
     border: 1px solid var(--global-divider-color);
     border-radius: 999px;
     text-decoration: none;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+  }
+  @media (max-width: 576px) {
+    .lang-toggle {
+      top: auto;
+      bottom: 1rem;
+      right: 1rem;
+    }
   }
   .lang-toggle:hover {
     color: var(--global-hover-text-color);
