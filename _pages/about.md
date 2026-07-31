@@ -48,17 +48,16 @@ En tant que société savante scientifique, la SFBVie donne la priorité aux mé
 
 ### Ce qui nous différencie
 
-- Focus **biologie fondamentale** + translation (et non soins/clinique).
-- Innovation audacieuse, évaluée avec exigence.
-- Interdisciplinarité sélective : éthique, philosophie, société.
-- Impact mesurable : avancées mécanistiques et trajectoires translationales.
+- Focus sur la biologie fondamentale et la biologie biomédicale pour des avancées mécanistiques majeures et des applications innovantes en médecine, santé publique et écologie.
+- Interdisciplinarité incluant l'éthique, la philosophie, la sociologie.
 
 ### International
 
-- Coopérations via MoU et sessions conjointes.
-- Échanges de conférenciers et de jeunes chercheurs.
+- Coopérations avec les sociétés partenaires.
+- Mise en relation des chercheurs/ses pour collaboration et montage de projets ambitieux.
+- Promouvoir la biologie du vieillissement auprès des instances internationales.
+- Contribuer à la création d'une communauté internationale de jeunes chercheurs/ses.
 - Harmonisation des standards et bonnes pratiques.
-- Visibilité croisée avec les sociétés partenaires.
 
 Découvrez nos [groupes thématiques]({{ '/projects/' | relative_url }}), nos [ressources documentaires]({{ '/ressources/' | relative_url }}), et [comment adhérer]({{ '/adhesion/' | relative_url }}) à la SFBVie.
 
