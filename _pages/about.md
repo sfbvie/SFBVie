@@ -73,8 +73,12 @@ Découvrez nos [groupes thématiques]({{ '/projects/' | relative_url }}), nos [r
     <a class="partner-logo-chip" href="https://www.inserm.fr" target="_blank" rel="noopener">
       <img src="{{ '/assets/img/logo_inserm.png' | relative_url }}" alt="Inserm" loading="lazy">
     </a>
-    <p class="partner-logo-caption">Instituts thématiques BRCDE et PMN</p>
   </div>
+</div>
+
+<div class="partner-itmo-logos">
+  <span class="partner-itmo-chip"><img src="{{ '/assets/img/logo_itmo_bcde.png' | relative_url }}" alt="Institut thématique Biologie cellulaire, reproduction, développement et évolution" loading="lazy"></span>
+  <span class="partner-itmo-chip"><img src="{{ '/assets/img/logo_itmo_pmn.png' | relative_url }}" alt="Institut thématique Physiopathologie, métabolisme, nutrition" loading="lazy"></span>
 </div>
 
 <style>
@@ -84,7 +88,7 @@ Découvrez nos [groupes thématiques]({{ '/projects/' | relative_url }}), nos [r
     align-items: flex-start;
     justify-content: center;
     gap: 1.5rem;
-    margin: 1rem 0 2rem;
+    margin: 1rem 0 1.25rem;
   }
   .partner-logo-col {
     display: flex;
@@ -105,6 +109,29 @@ Découvrez nos [groupes thématiques]({{ '/projects/' | relative_url }}), nos [r
   .partner-logo-chip img {
     height: 100%;
     width: auto;
+  }
+
+  .partner-itmo-logos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.25rem;
+    margin: 0 0 2rem;
+  }
+  .partner-itmo-chip {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+    background: #ffffff;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+  }
+  .partner-itmo-chip img {
+    height: 32px;
+    width: auto;
+    max-width: 100%;
   }
   .partner-logo-caption {
     margin: 0;
