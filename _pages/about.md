@@ -18,7 +18,7 @@ latest_posts:
   limit: 3 # 3 real posts exist so far (the al-folio sample posts are hidden from /blog/ but not filtered here); bump this up whenever a new real post is published
 ---
 
-<a class="lang-toggle" href="https://translate.google.com/translate?sl=fr&tl=en&u={{ site.url }}{{ page.url | relative_url }}" target="_blank" rel="noopener" title="Traduire cette page en anglais (Google Traduction)">🌐 English</a>
+<a class="lang-toggle" href="https://translate.google.com/translate?sl=fr&tl=en&u={{ site.url }}{{ page.url | relative_url }}" title="Traduire cette page en anglais (Google Traduction)" target="_self">🌐 English</a>
 
 <style>
   .lang-toggle {
