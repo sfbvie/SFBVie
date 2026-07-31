@@ -2,6 +2,7 @@
 layout: post
 title: "Summer School : Aging & Senescence — From Evolution to Disease"
 date: 2026-07-24 09:00:00+0200
+event_date: "24-25 septembre 2026"
 description: École d'été internationale sur le vieillissement et la sénescence, 24-25 septembre 2026, Créteil.
 related_posts: false
 featured: true

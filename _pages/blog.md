@@ -73,7 +73,7 @@ pagination:
 <div class="float-right">
 <i class="fa-solid fa-thumbtack fa-xs"></i>
 </div>
-<h3 class="card-title text-lowercase">{{ post.title }}</h3>
+<h3 class="card-title text-lowercase">{{ post.title }}{% if post.event_date %} — <strong><u>{{ post.event_date }}</u></strong>{% endif %}</h3>
 <p class="card-text">{{ post.description }}</p>
 
                     {% if post.external_source == blank %}
@@ -140,6 +140,7 @@ pagination:
         {% else %}
           <a class="post-title" href="{{ post.redirect | relative_url }}">{{ post.title }}</a>
         {% endif %}
+        {% if post.event_date %} — <strong><u>{{ post.event_date }}</u></strong>{% endif %}
       </h3>
       <p>{{ post.description }}</p>
       <p class="post-meta">

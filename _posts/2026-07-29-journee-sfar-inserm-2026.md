@@ -2,6 +2,7 @@
 layout: post
 title: "Journée SFAR-INSERM 2026"
 date: 2026-07-29 10:00:00+0200
+event_date: "8 décembre 2026"
 description: "L'âge physiologique au cœur de la réponse au stress : vers une anesthésie-réanimation de précision — 8 décembre 2026."
 related_posts: false
 tags: senescence colloque

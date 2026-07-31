@@ -2,6 +2,7 @@
 layout: post
 title: "5e colloque : Expanding evolutionary theories of ageing to take into account symbioses and interactions throughout the Web of Life"
 date: 2026-07-24 10:00:00+0200
+event_date: "4 novembre 2026"
 description: Colloque international co-organisé par Eric Bapteste et Michael Rera, 4 novembre 2026, Sorbonne Université.
 related_posts: false
 tags: colloque evolution ecologie symbiose
