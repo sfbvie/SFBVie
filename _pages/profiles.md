@@ -2,7 +2,7 @@
 layout: profiles
 permalink: /people/
 title: bureau
-description: membres du bureau et du conseil d'administration de la SFBVie
+description: membres du bureau de la SFBVie
 nav: true
 nav_order: 7
 
