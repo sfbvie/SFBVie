@@ -11,6 +11,7 @@ nav_order: 4
 
 - [Charte scientifique & éthique (PDF)]({{ '/assets/pdf/charte_sfbv.pdf' | relative_url }})
 - [Statuts (PDF)]({{ '/assets/pdf/statuts_sfbv.pdf' | relative_url }})
+- [Conseil scientifique (PDF)]({{ '/assets/pdf/conseil_scientifique_sfbvie.pdf' | relative_url }})
 
 ### Programme de la 1ère journée de lancement de la SFBVie
 
