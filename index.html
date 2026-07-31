@@ -24,8 +24,10 @@
     initTheme();
   </script> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3.1.0/dist/cookieconsent.css" integrity="sha256-ygRrixsQlBByBZiOcJamh7JByO9fP+/l5UPtKNJmRsE=" crossorigin="anonymous"> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item active"> <a class="nav-link" href="/">à propos <span class="sr-only">(current)</span> </a> </li> <li class="nav-item "> <a class="nav-link" href="/blog/">actualités </a> </li> <li class="nav-item "> <a class="nav-link" href="/projects/">groupes thématiques </a> </li> <li class="nav-item "> <a class="nav-link" href="/ressources/">ressources </a> </li> <li class="nav-item "> <a class="nav-link" href="/adhesion/">adhésion </a> </li> <li class="nav-item "> <a class="nav-link" href="/mecenat/">mécénat </a> </li> <li class="nav-item "> <a class="nav-link" href="/people/">bureau </a> </li> <li class="nav-item"> <button id="search-toggle" type="button" title="Search" aria-label="Open search"> <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title"> Société Française de Biologie du Vieillissement </h1> <p class="desc">Société savante nationale dédiée à la biologie fondamentale du vieillissement, ouverte à l'international.</p> </header> <article> <div class="clearfix"> <p><a class="lang-toggle" href="https://translate.google.com/translate?sl=fr&amp;tl=en&amp;u=https://sfbvie.fr/" target="_blank" rel="noopener" title="Traduire cette page en anglais (Google Traduction)">🌐 English</a></p> <style>
   .lang-toggle {
-    display: inline-block;
-    margin-bottom: 1rem;
+    position: fixed;
+    top: 0.6rem;
+    right: 4.5rem;
+    z-index: 1051;
     padding: 0.3rem 0.75rem;
     font-size: 0.8rem;
     color: var(--global-text-color);
@@ -33,6 +35,14 @@
     border: 1px solid var(--global-divider-color);
     border-radius: 999px;
     text-decoration: none;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+  }
+  @media (max-width: 576px) {
+    .lang-toggle {
+      top: auto;
+      bottom: 1rem;
+      right: 1rem;
+    }
   }
   .lang-toggle:hover {
     color: var(--global-hover-text-color);
