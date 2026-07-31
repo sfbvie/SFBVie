@@ -18,6 +18,26 @@ latest_posts:
   limit: 3 # 3 real posts exist so far (the al-folio sample posts are hidden from /blog/ but not filtered here); bump this up whenever a new real post is published
 ---
 
+<a class="lang-toggle" href="https://translate.google.com/translate?sl=fr&tl=en&u={{ site.url }}{{ page.url | relative_url }}" target="_blank" rel="noopener" title="Traduire cette page en anglais (Google Traduction)">🌐 English</a>
+
+<style>
+  .lang-toggle {
+    display: inline-block;
+    margin-bottom: 1rem;
+    padding: 0.3rem 0.75rem;
+    font-size: 0.8rem;
+    color: var(--global-text-color);
+    background-color: var(--global-card-bg-color);
+    border: 1px solid var(--global-divider-color);
+    border-radius: 999px;
+    text-decoration: none;
+  }
+  .lang-toggle:hover {
+    color: var(--global-hover-text-color);
+    background-color: var(--global-hover-color);
+  }
+</style>
+
 <!--
   Manual profile block (light/dark logo swap), kept in page content rather than
   a _layouts override: the starter's style contract (test/style_contract.js)
