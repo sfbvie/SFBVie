@@ -15,7 +15,7 @@ profiles:
       <p>Eric Gilson</p>
       <p>IRCAN, Université Côte d'Azur — CHU de Nice</p>
   - align: left
-    image: isabelle_ader.png
+    image: isabelle_ader.jpg
     image_circular: true
     content: about_isabelle.md
     more_info: >
