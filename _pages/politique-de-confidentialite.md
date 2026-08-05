@@ -26,16 +26,16 @@ Conformément au Règlement général sur la protection des données (RGPD) et �
 
 Ce site n'utilise pas de formulaire collectant des données personnelles : les demandes d'adhésion, de mécénat ou de contact s'effectuent par e-mail à [contact@sfbvie.fr](mailto:contact@sfbvie.fr), hors de ce site.
 
-Un outil de mesure d'audience (Google Analytics) peut être utilisé pour comprendre la fréquentation du site. Il n'est activé qu'après votre consentement explicite, recueilli via la bannière de cookies affichée lors de votre première visite. Vous pouvez modifier votre choix à tout moment :
+Ce site utilise un seul cookie de mesure d'audience, déposé par Google Analytics, à des fins statistiques uniquement (nombre de visites, pages consultées). Ce cookie ne sert pas à des fins publicitaires et n'est pas croisé avec d'autres sites.
 
-<a data-cc="show-preferencesModal" href="#" role="button">Gérer mes préférences de cookies</a>
+Vous pouvez refuser ce cookie à tout moment en configurant votre navigateur pour bloquer les cookies tiers ou les requêtes vers `google-analytics.com` / `googletagmanager.com`, ou en utilisant une extension de blocage de traceurs.
 
-### Base légale et conservation
+### Conservation
 
-Le traitement des données de mesure d'audience repose sur votre consentement (article 6.1.a du RGPD). Les données sont conservées pour une durée maximale de 14 mois.
+Les données de mesure d'audience sont conservées pour une durée maximale de 14 mois.
 
 ### Vos droits
 
-Conformément aux articles 15 à 22 du RGPD, vous disposez d'un droit d'accès, de rectification, d'effacement, de limitation, d'opposition et de portabilité de vos données. Vous pouvez exercer ces droits en écrivant à [contact@sfbvie.fr](mailto:contact@sfbvie.fr).
+Conformément aux articles 15 à 22 du RGPD, vous disposez d'un droit d'accès, de rectification, d'effacement, de limitation et d'opposition sur vos données. Vous pouvez exercer ces droits en écrivant à [contact@sfbvie.fr](mailto:contact@sfbvie.fr).
 
 Vous disposez également du droit d'introduire une réclamation auprès de la [Commission Nationale de l'Informatique et des Libertés (CNIL)](https://www.cnil.fr).
