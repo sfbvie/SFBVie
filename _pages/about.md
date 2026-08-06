@@ -114,8 +114,8 @@ Découvrez nos [groupes thématiques]({{ '/projects/' | relative_url }}), nos [r
 <hr class="partner-divider">
 
 <div class="partner-itmo-logos">
-  <span class="partner-itmo-chip"><img src="{{ '/assets/img/logo_sfgg.png' | relative_url }}" alt="Société Française de Gériatrie et Gérontologie (SFGG)" loading="lazy"></span>
-  <span class="partner-itmo-chip"><img src="{{ '/assets/img/logo_efar.png' | relative_url }}" alt="European Federation for Aging Research (EFAR)" loading="lazy"></span>
+  <a class="partner-itmo-chip" href="https://sfgg.org/" target="_blank" rel="noopener"><img src="{{ '/assets/img/logo_sfgg.png' | relative_url }}" alt="Société Française de Gériatrie et Gérontologie (SFGG)" loading="lazy"></a>
+  <a class="partner-itmo-chip" href="https://agingfederation.eu/" target="_blank" rel="noopener"><img src="{{ '/assets/img/logo_efar.png' | relative_url }}" alt="European Federation for Aging Research (EFAR)" loading="lazy"></a>
 </div>
 
 <style>
