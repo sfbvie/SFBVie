@@ -184,7 +184,3 @@ Découvrez nos [groupes thématiques]({{ '/projects/' | relative_url }}), nos [r
     text-align: center;
   }
 </style>
-
-{% if site.enable_bluesky_news %}
-<script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>
-{% endif %}
