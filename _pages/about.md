@@ -111,7 +111,21 @@ Découvrez nos [groupes thématiques]({{ '/projects/' | relative_url }}), nos [r
   <span class="partner-itmo-chip"><img src="{{ '/assets/img/logo_itmo_pmn.png' | relative_url }}" alt="Institut thématique Physiopathologie, métabolisme, nutrition" loading="lazy"></span>
 </div>
 
+<hr class="partner-divider">
+
+<div class="partner-itmo-logos">
+  <span class="partner-itmo-chip"><img src="{{ '/assets/img/logo_sfgg.png' | relative_url }}" alt="Société Française de Gériatrie et Gérontologie (SFGG)" loading="lazy"></span>
+  <span class="partner-itmo-chip"><img src="{{ '/assets/img/logo_efar.png' | relative_url }}" alt="European Federation for Aging Research (EFAR)" loading="lazy"></span>
+</div>
+
 <style>
+  .partner-divider {
+    max-width: 12rem;
+    margin: 0.5rem auto 1.5rem;
+    border: none;
+    border-top: 1px solid var(--global-divider-color);
+  }
+
   .partner-logos {
     display: flex;
     flex-wrap: wrap;
