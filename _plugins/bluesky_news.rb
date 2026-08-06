@@ -1,12 +1,17 @@
 require "net/http"
 require "json"
 require "time"
+require "cgi"
 
 # Populates the homepage "news" panel (site.news, i.e. the _news collection
 # rendered by al_folio_core's news.liquid) with the SFBVie account's recent
 # original Bluesky posts, fetched at build time from Bluesky's public,
 # unauthenticated AT Protocol API. Runs alongside the hand-written _news/*.md
 # announcements rather than replacing them; both are sorted together by date.
+# Each post renders inline in the news table as Bluesky's own official
+# embed widget (the same <blockquote class="bluesky-embed"> + embed.js
+# mechanism bsky.app's own "Embed post" share feature generates) — see the
+# matching script include in about.md.
 #
 # Config: enable_bluesky_news (bool), bluesky_news_handle (string, defaults
 # to the handle below), bluesky_news_limit (int, defaults to 5).
@@ -49,9 +54,10 @@ module BlueskyNews
         text = record["text"]
         created_at = record["createdAt"]
         post_uri = item.dig("post", "uri")
-        next if text.nil? || text.strip.empty? || created_at.nil? || post_uri.nil?
+        post_cid = item.dig("post", "cid")
+        next if text.nil? || text.strip.empty? || created_at.nil? || post_uri.nil? || post_cid.nil?
 
-        { uri: post_uri, text: text, created_at: created_at }
+        { uri: post_uri, cid: post_cid, text: text, created_at: created_at }
       end
     end
 
@@ -62,6 +68,7 @@ module BlueskyNews
       date = Time.parse(post[:created_at]).utc
       bsky_url = "https://bsky.app/profile/#{handle}/post/#{rkey}"
       title = truncate(post[:text])
+      escaped_text = CGI.escapeHTML(post[:text])
 
       path = site.in_source_dir("_news/bluesky-#{rkey}.md")
       doc = Jekyll::Document.new(path, { site: site, collection: site.collections["news"] })
@@ -69,7 +76,17 @@ module BlueskyNews
       doc.data["title"] = title
       doc.data["date"] = date
       doc.data["related_posts"] = false
-      doc.content = "#{post[:text]}\n\n[Voir sur Bluesky ↗](#{bsky_url})"
+      doc.data["inline"] = true
+      # No literal "<p>"/"</p>" here on purpose: news.liquid's inline rendering does
+      # `item.content | remove: '<p>' | remove: '</p>'` to strip kramdown's automatic
+      # paragraph wrapper — a plain string removal, not HTML-aware, so any <p> tag of
+      # ours (e.g. the one Bluesky's own share-generated markup normally wraps post
+      # text in) would get mangled too.
+      doc.content = <<~HTML
+        <blockquote class="bluesky-embed" data-bluesky-uri="#{post[:uri]}" data-bluesky-cid="#{post[:cid]}" data-bluesky-embed-color-mode="system">
+          #{escaped_text} <a href="#{bsky_url}">#{bsky_url}</a>
+        </blockquote>
+      HTML
 
       site.collections["news"].docs << doc
     end
