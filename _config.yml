@@ -456,6 +456,9 @@ enable_math: true # enables math typesetting (uses MathJax)
 enable_tooltips: false # enables automatic tooltip links generated for each section titles on pages and posts
 enable_darkmode: true # enables switching between light/dark modes
 enable_navbar_social: false # enables displaying social links in the navbar on the about page
+enable_bluesky_news: true # fetches the SFBVie Bluesky account's recent posts into the homepage news panel at build time — see _plugins/bluesky_news.rb
+bluesky_news_handle: sfbvie.bsky.social
+bluesky_news_limit: 5
 enable_project_categories: true # enables categorization of projects into multiple categories
 enable_medium_zoom: true # enables image zoom feature (as on medium.com)
 enable_progressbar: true # enables a horizontal progress bar linked to the vertical scroll position
