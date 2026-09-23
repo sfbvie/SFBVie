@@ -18,7 +18,8 @@ La SFBVie est fière de s'associer à la Summer School internationale **"Aging &
 
 - **Dates :** 24-25 septembre 2026
 - **Horaires :** 08h30–18h30 (jour 1) · 09h00–17h10 (jour 2)
-- **Lieu :** Bâtiment de Recherche Biomédicale, 8 Rue du Général Sarrail, Créteil
+- **Lieu :** IMRB (Université Paris-Est Créteil), Bâtiment de Recherche Biomédicale, 8 Rue du Général Sarrail, Créteil
+- **Page officielle :** [eurlive.u-pec.fr](https://eurlive.u-pec.fr/fr/actualites/evenements-a-venir/summer-school-2026-24-et-25-septembre-aging-senescence-from-evolution-to-disease-36)
 - **Entrée libre — inscription obligatoire** (voir l'affiche pour le QR code d'inscription et le programme détaillé)
 
 ### Partenaires
