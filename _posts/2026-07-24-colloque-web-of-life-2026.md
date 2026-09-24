@@ -11,7 +11,7 @@ categories: evenements
 
 La SFBVie relaie avec plaisir l'invitation à la 5e édition de ce colloque international, co-organisé par **Eric Bapteste** (Sorbonne Université) et **Michael Rera** (SFBVie), qui aura lieu le **4 novembre 2026** à l'Université Jussieu (campus Jussieu, Sorbonne Université, Paris).
 
-Cet événement est financé par l'action CNRS International Emerging Action **LIFE-DECODE** (à M. Rera), par l'**UMR CQSB** (Sorbonne Université, Paris), et par le projet transversal de recherche **InterAging** de l'INSERM (dirigé par le Pr. E. Gilson).
+Cet événement est financé par l'action CNRS International Emerging Action **LIFE-DECODE** (à M. Rera), par l'**UMR CQSB** (Sorbonne Université, Paris), par l'**UFR Sciences de la Vie** (Sorbonne Université), et par le projet transversal de recherche **InterAging** de l'INSERM (dirigé par le Pr. E. Gilson).
 
 ### Argumentaire
 
@@ -28,24 +28,31 @@ Il s'agit de la 5e édition de ce colloque ; l'historique des éditions précéd
 
 N'hésitez pas à relayer cette invitation auprès de toute personne susceptible d'être intéressée.
 
-### Programme scientifique (provisoire)
+### Programme scientifique
 
-- Dr. Eric Bapteste (SU, Paris, France) : _"Welcome worlds"_
-- Pr. Agustin Ibanez (Senior Atlantic Fellow, Global Brain Health Institute, UCSF San Francisco, US & TCD Dublin, Irlande) : _"The exposome of healthy and accelerated aging across 40 countries"_
-- Dr. Jane Reznick (CECAD Excellence Cluster in Aging Research, University of Cologne, Allemagne) : _"Unexpected lessons of aging studies on naked mole rats"_
-- Pr. Suzanne Foitzick (Institute of Molecular Biology gGmbH, Mainz, Allemagne) : _"Parasitism, symbioses and the manipulation of host aging"_
-- Dr. Thomas Tully (SU, Paris, France) : _"Limits of aging field studies"_
-- Pr. Eric Gilson (Université Côte d'Azur, Nice, France) : _"The molecular evolution of animal aging"_
-- Pr. Emma Teeling (University College Dublin, Irlande) : _"The unexpected lessons from bat studies about aging"_
-- Dr. Annette Baudisch (University of Southern Denmark, Danemark) : _"The evolution of models of biodemography of aging: past, present, future"_
-- Dr. Andreas Beyer (CECAD Excellence Cluster in Aging Research, University of Cologne, Allemagne) : _"Systems biology and aging"_
-- Dr. Jean-François Lemaitre (UMR CNRS 5558 – LBBE, UCB Lyon 1, France) : _"Male Reproductive Senescence in Mammals"_
-- Pr. Claudio Franceschi (University of Bologna, Italie) : _"The social microbiome of older people"_
-- Pr. Guido Kroemer (Gustave Roussy, Grand-Paris, France) : _"The integration of social determinants in explanations of aging"_
-- Dr. Katarzyna Siudeja (I2BC, Université Paris-Saclay, France) : _"Endogeneous retroelements and aging"_
-- Dr. Johannes Martens (SU, Paris, France) : _"Aging and ontology"_
-- Pr. Alan Cohen (Columbia University, USA) : _"How evolution shaped biological networks and consequences on aging"_
-- Pr. Steve Horvath (UCLA, USA) : _"Epigenetic clocks across the Tree of Life: limits and successes"_
-- Pr. Uri Alon (Weizmann Institute, Israël) : _"Open issues in the aging of (biological) systems"_
+**Matinée**
 
-_L'ordre des interventions n'est pas encore définitif._
+- **9h00–9h05** — Dr. Eric Bapteste (SU, CNRS, Paris, France) : _"A few welcome words"_
+- **9h05–9h30** — Dr. Annette Baudisch (University of Southern Denmark, Danemark) : _"The evolution of models of biodemography of aging: past, present, future"_
+- **9h30–9h55** — Pr. Emma Teeling (University College Dublin, Irlande) : _"The unexpected lessons from bat studies about aging"_
+- **9h55–10h20** — Pr. Suzanne Foitzick (Institute of Molecular Biology gGmbH, Mainz, Allemagne) : _"Parasitism, symbioses and the manipulation of host aging"_
+- **10h20–10h45** — Dr. Katarzyna Siudeja (I2BC, Université Paris-Saclay, France) : _"Endogeneous retroelements and aging"_
+- _Pause (5 min)_
+- **10h45–11h10** — Dr. Jane Reznick (CECAD Excellence Cluster in Aging Research, University of Cologne, Allemagne) : _"Unexpected lessons of aging studies on naked mole rats"_
+- **11h10–11h35** — Pr. Vera Gorbunova (University of Rochester, USA) : _"DNA repair, aging and longevity across the Tree of Life"_
+- **11h35–12h00** — Pr. Claudio Franceschi (University of Bologna, Italie) : _"The social microbiome of older people"_
+
+_Pause déjeuner_
+
+**Après-midi**
+
+- **14h15–14h40** — Dr. Thomas Tully (SU, Paris, France) : _"The shape and plasticity of ageing trajectories"_
+- **14h40–15h05** — Dr. Jean-François Lemaitre (UMR CNRS 5558 – LBBE, UCB Lyon 1, France) : _"Male Reproductive Senescence in Mammals"_
+- **15h05–15h30** — Pr. Eric Gilson (Université Côte d'Azur, Nice, France) : _"The molecular evolution of animal aging"_
+- **15h30–15h55** — Pr. Guido Kroemer (Gustave Roussy, Grand-Paris, France) : _"A phylogenetically conserved pro-aging pathway involving ACBP/DBI"_
+- _Pause (5 min)_
+- **15h55–16h20** — Pr. Uri Alon (Weizmann Institute, Israël) : _"Open issues in the aging of (biological) systems"_
+- **16h20–16h45** — Dr. Andreas Beyer (CECAD Excellence Cluster in Aging Research, University of Cologne, Allemagne) : _"Systems biology and aging"_
+- **16h45–17h10** — Pr. Steve Horvath (UCLA, USA) : _"Epigenetic clocks across the Tree of Life: limits and successes"_
+- **17h10–17h35** — Pr. Agustin Ibanez (Senior Atlantic Fellow, Global Brain Health Institute, UCSF San Francisco, US & TCD Dublin, Irlande) : _"The exposome of healthy and accelerated aging across 40 countries"_ (susceptible d'être déplacée en dernière intervention de la journée)
+- **17h35–18h00** — Dr. Johannes Martens (SU, Paris, France) : _"Aging and ontology"_
