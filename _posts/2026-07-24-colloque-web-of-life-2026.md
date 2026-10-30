@@ -3,13 +3,13 @@ layout: post
 title: "5e colloque : Expanding evolutionary theories of ageing to take into account symbioses and interactions throughout the Web of Life"
 date: 2026-07-24 10:00:00+0200
 event_date: "4 novembre 2026"
-description: Colloque international co-organisé par Eric Bapteste et Michael Rera, 4 novembre 2026, Sorbonne Université.
+description: Colloque international co-organisé par Eric Bapteste et Michael Rera, 4 novembre 2026, Académie des sciences, Paris.
 related_posts: false
 tags: colloque evolution ecologie symbiose
 categories: evenements
 ---
 
-La SFBVie relaie avec plaisir l'invitation à la 5e édition de ce colloque international, co-organisé par **Eric Bapteste** (Sorbonne Université) et **Michael Rera** (SFBVie), qui aura lieu le **4 novembre 2026** à l'Université Jussieu (campus Jussieu, Sorbonne Université, Paris).
+La SFBVie relaie avec plaisir l'invitation à la 5e édition de ce colloque international, co-organisé par **Eric Bapteste** (Sorbonne Université) et **Michael Rera** (SFBVie), qui aura lieu le **4 novembre 2026** à l'Académie des sciences (salle Bonnefous, 23 quai de Conti, 75006 Paris).
 
 Cet événement est financé par l'action CNRS International Emerging Action **LIFE-DECODE** (à M. Rera), par l'**UMR CQSB** (Sorbonne Université, Paris), par l'**UFR Sciences de la Vie** (Sorbonne Université), et par le projet transversal de recherche **InterAging** de l'INSERM (dirigé par le Pr. E. Gilson). Il bénéficie également du soutien de l'**Académie des sciences**.
 
@@ -24,7 +24,7 @@ Il s'agit de la 5e édition de ce colloque ; l'historique des éditions précéd
 ### Informations pratiques
 
 - **Date :** 4 novembre 2026
-- **Lieu :** Université Jussieu, campus Jussieu, Sorbonne Université, Paris
+- **Lieu :** Académie des sciences, salle Bonnefous, 23 quai de Conti, 75006 Paris
 - **Format :** hybride — présentiel (40 places, premier arrivé premier servi) ou visioconférence
 - **Entrée libre — inscription obligatoire avant le 25 octobre 2026** par e-mail à [epbapteste@gmail.com](mailto:epbapteste@gmail.com), en précisant votre mode de participation souhaité (présentiel ou distanciel).
 
