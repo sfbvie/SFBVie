@@ -8,6 +8,6 @@ related_posts: false
 
 La SFBVie relaie l'invitation à la 5e édition de ce colloque international, co-organisé par Eric Bapteste (Sorbonne Université) et Michael Rera (SFBVie), le **4 novembre 2026** à l'Académie des sciences (23 quai de Conti, Paris).
 
-**Format :** hybride (présentiel, 40 places, ou visioconférence) · **Entrée libre** · **Inscription obligatoire avant le 25 octobre** par e-mail à [epbapteste@gmail.com](mailto:epbapteste@gmail.com) en précisant votre mode de participation.
+**Format :** hybride (présentiel, une cinquantaine de places réservées aux inscrit·e·s, ou visioconférence) · **Entrée libre** · **Inscription obligatoire avant le 25 octobre** par e-mail à [epbapteste@gmail.com](mailto:epbapteste@gmail.com) en précisant votre mode de participation.
 
 Consultez [le programme complet et la liste des intervenant·e·s]({{ '/blog/2026/colloque-web-of-life-2026/' | relative_url }}).

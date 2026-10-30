@@ -23,9 +23,9 @@ Il s'agit de la 5e édition de ce colloque ; l'historique des éditions précéd
 
 ### Informations pratiques
 
-- **Date :** 4 novembre 2026
+- **Date :** 4 novembre 2026, 9h00–18h15
 - **Lieu :** Académie des sciences, salle Bonnefous, 23 quai de Conti, 75006 Paris
-- **Format :** hybride — présentiel (40 places, premier arrivé premier servi) ou visioconférence
+- **Format :** hybride — présentiel (une cinquantaine de places, réservées aux personnes inscrites) ou visioconférence
 - **Entrée libre — inscription obligatoire avant le 25 octobre 2026** par e-mail à [epbapteste@gmail.com](mailto:epbapteste@gmail.com), en précisant votre mode de participation souhaité (présentiel ou distanciel).
 
 N'hésitez pas à relayer cette invitation auprès de toute personne susceptible d'être intéressée.
