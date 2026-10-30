@@ -11,7 +11,9 @@ categories: evenements
 
 La SFBVie relaie avec plaisir l'invitation à la 5e édition de ce colloque international, co-organisé par **Eric Bapteste** (Sorbonne Université) et **Michael Rera** (SFBVie), qui aura lieu le **4 novembre 2026** à l'Université Jussieu (campus Jussieu, Sorbonne Université, Paris).
 
-Cet événement est financé par l'action CNRS International Emerging Action **LIFE-DECODE** (à M. Rera), par l'**UMR CQSB** (Sorbonne Université, Paris), par l'**UFR Sciences de la Vie** (Sorbonne Université), et par le projet transversal de recherche **InterAging** de l'INSERM (dirigé par le Pr. E. Gilson).
+Cet événement est financé par l'action CNRS International Emerging Action **LIFE-DECODE** (à M. Rera), par l'**UMR CQSB** (Sorbonne Université, Paris), par l'**UFR Sciences de la Vie** (Sorbonne Université), et par le projet transversal de recherche **InterAging** de l'INSERM (dirigé par le Pr. E. Gilson). Il bénéficie également du soutien de l'**Académie des sciences**.
+
+<a href="https://www.academie-sciences.fr" target="_blank" rel="noopener"><img src="{{ '/assets/img/logo_academie_sciences.png' | relative_url }}" alt="Académie des sciences, Institut de France" width="260" loading="lazy"></a>
 
 ### Argumentaire
 
