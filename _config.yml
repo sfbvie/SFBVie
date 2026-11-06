@@ -325,7 +325,7 @@ jekyll-archives:
     enabled: [year, tags, categories] # enables year, tag and category archives (remove if you need to disable one of them).
 
 display_tags: ["evolution", "ecologie", "symbiose"] # these tags will be displayed on the front page of your blog
-display_categories: ["evenements"] # these categories will be displayed on the front page of your blog
+display_categories: ["evenements", "publications"] # these categories will be displayed on the front page of your blog
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar

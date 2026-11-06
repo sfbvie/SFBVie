@@ -10,12 +10,12 @@ social: true # includes social icons at the bottom of the page
 announcements:
   enabled: true # includes a list of news items
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
+  limit: 6 # leave blank to include all the news in the `_news` folder
 
 latest_posts:
   enabled: true
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 5 # 5 real posts exist so far (the al-folio sample posts are hidden from /blog/ but not filtered here); bump this up whenever a new real post is published
+  limit: 6 # 6 real posts exist so far (the al-folio sample posts are hidden from /blog/ but not filtered here); bump this up whenever a new real post is published
 ---
 
 <a class="lang-toggle" href="https://translate.google.com/translate?sl=fr&tl=en&u={{ site.url }}{{ page.url | relative_url }}" title="Traduire cette page en anglais (Google Traduction)" target="_self">🌐 English</a>
