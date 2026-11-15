@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Interaging 2026 — 5 ans de collaboration internationale au service de la recherche sur le vieillissement
-date: 2026-10-14 10:00:00+0200
+date: 2026-11-05 09:00:00+0100
 inline: false
 related_posts: false
 ---

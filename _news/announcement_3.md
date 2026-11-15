@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 5e colloque — Expanding evolutionary theories of ageing to take into account symbioses and interactions throughout the Web of Life
-date: 2026-07-24 10:00:00+0200
+date: 2026-11-04 09:00:00+0100
 inline: false
 related_posts: false
 ---

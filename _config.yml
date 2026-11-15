@@ -126,6 +126,10 @@ blog_name: SFBVie # blog_name will be displayed in your blog page
 blog_description: actualités autour de la société
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
+# future: true so that _news items can carry the (future) event date as their `date:`.
+# The homepage news list shows `date:` in bold on the left; Eric Gilson asked (2026-11-12)
+# that this be the event date, not the posting date. Posts keep their real publication date.
+future: true
 
 # Pagination
 pagination:

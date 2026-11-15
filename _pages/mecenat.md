@@ -15,7 +15,7 @@ Créée en 2026, la Société Française de Biologie du Vieillissement rassemble
     <div class="mecenat-stat-label">membres issus de disciplines complémentaires</div>
   </div>
   <div class="mecenat-stat">
-    <div class="mecenat-stat-value">30 avril 2027</div>
+    <div class="mecenat-stat-value">29 avril 2027</div>
     <div class="mecenat-stat-label">2<sup>e</sup> Journée annuelle à Nice</div>
   </div>
   <div class="mecenat-stat">

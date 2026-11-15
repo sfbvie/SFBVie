@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Séminaires du GT Biologie du vieillissement — Journées Annuelles de la SFGG
-date: 2026-09-23 10:00:00+0200
+date: 2026-11-24 08:30:00+0100
 inline: false
 related_posts: false
 ---

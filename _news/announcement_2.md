@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Summer School — Aging & Senescence — From Evolution to Disease
-date: 2026-07-24 09:00:00+0200
+date: 2026-09-24 09:00:00+0200
 inline: false
 related_posts: false
 ---
