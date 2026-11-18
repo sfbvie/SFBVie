@@ -15,10 +15,12 @@ Le **GT Biologie du vieillissement** tiendra ses prochains séminaires dans le c
 
 - **Date :** mardi 24 novembre 2026
 - **Horaires :** 08h30–09h30
-- **Lieu :** Paris La Défense
+- **Lieu :** CNIT Forest, Paris La Défense, salle Dragonnier 6
 - **Programme complet des Journées :** [sfgg-events.org](https://sfgg-events.org/jasfgg-programme/)
 
 ### Programme
 
 - **Isabelle Ader** — _L'âge biologique existe-t-il ? Biomarqueurs actuels et futurs du vieillissement_
 - **Eric Boulanger** — _Peut-on vraiment ralentir le vieillissement ? Médicaments, preuves et promesses_
+
+_Mise à jour du 18 novembre :_ la session s'intitule « Peut-on mesurer et ralentir le vieillissement ? Biomarqueurs et médicaments d'aujourd'hui et surtout de demain » (modération : Johanne Poisson et Jean-Marc Corsi). Elle est suivie à 10h30 de la réunion annuelle du GT, où la SFBVie sera présentée ; voir [les trois rendez-vous du GT aux JASFGG]({{ '/blog/2026/sfbvie-jasfgg-2026/' | relative_url }}).
