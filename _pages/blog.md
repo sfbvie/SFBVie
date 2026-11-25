@@ -8,7 +8,7 @@ pagination:
   enabled: true
   collection: posts
   permalink: /page/:num/
-  per_page: 10 # raw post-file count, before the hide_from_list/featured filters below run; keep above (hidden stock posts + featured posts + real posts) so real actualités never spill onto a near-empty page 2 — see CLAUDE.md session log
+  per_page: 50 # raw post-file count, before the hide_from_list/featured filters below run; keep above (hidden stock posts + featured posts + real posts) so real actualités never spill onto a near-empty page 2 — see CLAUDE.md session log
   sort_field: date
   sort_reverse: true
   trail:
@@ -57,7 +57,7 @@ pagination:
   {% endif %}
 
 {% assign featured_posts = site.posts | where: "featured", "true" | where_exp: "post", "post.hide_from_list != true" %}
-{% if featured_posts.size > 0 %}
+{% if featured_posts.size > 0 and paginator.page <= 1 %}
 <br>
 
 <div class="container featured-posts">
