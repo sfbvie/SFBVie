@@ -1,1 +1,16 @@
-BEGIN:VCALENDAR VERSION:2.0 PRODID:-//SFBVie//sfbvie.fr//FR CALSCALE:GREGORIAN METHOD:PUBLISH BEGIN:VEVENT UID:blog-2026-journee-sfar-inserm-2026@sfbvie.fr DTSTAMP:20261126T152501Z DTSTART;VALUE=DATE:20261208 DTEND;VALUE=DATE:20261209 SUMMARY:Journée SFAR-INSERM 2026 DESCRIPTION:L'âge physiologique au cœur de la réponse au stress : vers une anesthésie-réanimation de précision — 8 décembre 2026.\n\nhttps://sfbvie.fr/blog/2026/journee-sfar-inserm-2026/ URL:https://sfbvie.fr/blog/2026/journee-sfar-inserm-2026/ END:VEVENT END:VCALENDAR
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//SFBVie//sfbvie.fr//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:blog-2026-journee-sfar-inserm-2026@sfbvie.fr
+DTSTAMP:20261126T152944Z
+DTSTART;VALUE=DATE:20261208
+DTEND;VALUE=DATE:20261209
+SUMMARY:Journée SFAR-INSERM 2026
+DESCRIPTION:L'âge physiologique au cœur de la réponse au stress : vers une anesthésie-réanimation de précision — 8 décembre 2026.\n\nhttps://sfbvie.fr/blog/2026/journee-sfar-inserm-2026/
+URL:https://sfbvie.fr/blog/2026/journee-sfar-inserm-2026/
+END:VEVENT
+END:VCALENDAR
+
