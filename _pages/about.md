@@ -65,6 +65,62 @@ latest_posts:
   </div>
 </div>
 
+{% comment %}
+"Prochain événement" banner, computed at build time (deploy.yml rebuilds daily): among posts with an `event_start`
+(and optional `event_end`, default = start) whose last day is today or later, the one starting first.
+Same logic as the auto-pinned card in \_pages/blog.md.
+{% endcomment %}
+{% assign today = site.time | date: "%Y%m%d" | plus: 0 %}
+{% assign next_event = nil %}
+{% assign next_start = 99999999 %}
+{% for p in site.posts %}
+{% if p.event_start and p.hide_from_list != true %}
+{% assign p_start = p.event_start | date: "%Y%m%d" | plus: 0 %}
+{% assign p_end = p.event_end | default: p.event_start | date: "%Y%m%d" | plus: 0 %}
+{% if p_end >= today and p_start < next_start %}
+{% assign next_event = p %}
+{% assign next_start = p_start %}
+{% endif %}
+{% endif %}
+{% endfor %}
+{% if next_event %}
+
+<div class="next-event-wrap"><a class="next-event" href="{{ next_event.url | relative_url }}">
+  <span class="next-event-label"><i class="fa-solid fa-calendar-day"></i> Prochain événement · {{ next_event.event_date }}</span>
+  <span class="next-event-title">{{ next_event.title }}</span>
+</a></div>
+
+<style>
+  .next-event {
+    display: block;
+    margin: 0 0 1.5rem;
+    padding: 0.75rem 1rem;
+    border-left: 4px solid var(--global-theme-color);
+    border-radius: 0.25rem;
+    background-color: var(--global-card-bg-color);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+    color: var(--global-text-color);
+    text-decoration: none;
+  }
+  .next-event:hover {
+    color: var(--global-text-color);
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  }
+  .next-event-label {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: var(--global-theme-color);
+  }
+  .next-event-title {
+    display: block;
+    margin-top: 0.2rem;
+  }
+</style>
+
+{% endif %}
+
 La **SFBVie** fédère une communauté multidisciplinaire centrée sur les mécanismes fondamentaux du vieillissement et leur translation en stratégies thérapeutiques innovantes, avec une ouverture internationale.
 
 En tant que société savante scientifique, la SFBVie donne la priorité aux mécanismes causaux du vieillissement, à l'innovation rigoureuse et à la translation vers la médecine et l'industrie, dans un cadre responsable.

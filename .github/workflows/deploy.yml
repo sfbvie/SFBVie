@@ -56,6 +56,8 @@ on:
       - "!docs/INSTALL.md"
       - "!README.md"
   workflow_dispatch:
+  schedule:
+    - cron: "15 0 * * *" # daily rebuild (01:15/02:15 Paris) so the auto-pinned "prochain événement" moves on by itself
 
 permissions:
   contents: write

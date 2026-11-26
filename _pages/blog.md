@@ -56,7 +56,30 @@ pagination:
   </div>
   {% endif %}
 
-{% assign featured_posts = site.posts | where: "featured", "true" | where_exp: "post", "post.hide_from_list != true" %}
+{% comment %}
+Next upcoming event, pinned automatically: among posts with an `event_start` (and optional `event_end`, default = start)
+whose last day is today or later, the one starting first. "Today" is the build date, so deploy.yml rebuilds daily.
+Same logic as in \_pages/about.md (no shared include possible: the style contract forbids \_includes here).
+{% endcomment %}
+{% assign today = site.time | date: "%Y%m%d" | plus: 0 %}
+{% assign next_event = nil %}
+{% assign next_start = 99999999 %}
+{% for p in site.posts %}
+{% if p.event_start and p.hide_from_list != true %}
+{% assign p_start = p.event_start | date: "%Y%m%d" | plus: 0 %}
+{% assign p_end = p.event_end | default: p.event_start | date: "%Y%m%d" | plus: 0 %}
+{% if p_end >= today and p_start < next_start %}
+{% assign next_event = p %}
+{% assign next_start = p_start %}
+{% endif %}
+{% endif %}
+{% endfor %}
+{% assign next_event_url = next_event.url | default: "" %}
+
+{% assign featured_posts = site.posts | where: "featured", "true" | where_exp: "post", "post.hide_from_list != true" | where_exp: "post", "post.url != next_event_url" %}
+{% if next_event %}
+{% assign featured_posts = featured_posts | unshift: next_event %}
+{% endif %}
 {% if featured_posts.size > 0 and paginator.page <= 1 %}
 <br>
 
@@ -73,6 +96,7 @@ pagination:
 <div class="float-right">
 <i class="fa-solid fa-thumbtack fa-xs"></i>
 </div>
+{% if post.url == next_event_url %}<p class="post-meta mb-1"><i class="fa-solid fa-calendar-day fa-sm"></i> prochain événement</p>{% endif %}
 <h3 class="card-title text-lowercase">{{ post.title }}{% if post.event_date %} — <strong><u>{{ post.event_date }}</u></strong>{% endif %}</h3>
 <p class="card-text">{{ post.description }}</p>
 
@@ -110,6 +134,7 @@ pagination:
     {% endif %}
     {% assign postlist = postlist | where_exp: "post", "post.hide_from_list != true" %}
     {% assign postlist = postlist | where_exp: "post", "post.featured != true" %}
+    {% assign postlist = postlist | where_exp: "post", "post.url != next_event_url" %}
 
     {% for post in postlist %}
 

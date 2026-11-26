@@ -3,6 +3,7 @@ layout: post
 title: "Séminaires du GT Biologie du vieillissement — Journées Annuelles de la SFGG"
 date: 2026-09-23 10:00:00+0200
 event_date: "24 novembre 2026"
+event_start: 2026-11-24
 description: "Deux séminaires du GT Biologie du vieillissement dans le cadre des Journées Annuelles de la SFGG, 24 novembre 2026, Paris La Défense."
 related_posts: false
 tags: senescence colloque

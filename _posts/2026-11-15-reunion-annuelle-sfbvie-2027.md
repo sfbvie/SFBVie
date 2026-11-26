@@ -3,6 +3,7 @@ layout: post
 title: "Save the date : réunion annuelle SFBVie/AGEMED, 29 avril 2027 à Nice"
 date: 2026-11-15 10:01:00+0100
 event_date: "29 avril 2027"
+event_start: 2027-04-29
 description: "Réunion annuelle SFBVie/AGEMED le 29 avril 2027 à l'hôtel Le Saint-Paul, Nice. Programme à venir."
 related_posts: false
 tags: colloque

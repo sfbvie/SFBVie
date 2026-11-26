@@ -3,6 +3,8 @@ layout: post
 title: "Meeting Nucleic Acids, Immunity and Inflammation: from mechanisms to pathologies"
 date: 2026-11-15 10:00:00+0100
 event_date: "27-28 avril 2027"
+event_start: 2027-04-27
+event_end: 2027-04-28
 description: "Congrès international sur les acides nucléiques, l'immunité et l'inflammation, les 27 et 28 avril 2027 à l'hôtel Le Saint-Paul (Nice), avec une session SFBVie le 28 avril après-midi."
 related_posts: false
 tags: senescence colloque
