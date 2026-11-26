@@ -48,7 +48,7 @@
     color: var(--global-hover-text-color);
     background-color: var(--global-hover-color);
   }
-</style> <div class="profile float-right"> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/logo_SFBVie-480.webp 480w,/assets/img/logo_SFBVie-800.webp 800w,/assets/img/logo_SFBVie-1400.webp 1400w," type="image/webp" sizes="(min-width: 930px) 270.0px, (min-width: 576px) 30vw, 95vw"></source> <img src="/assets/img/logo_SFBVie.png?v=e1032f9fc41f32cce9faa7b6abe8898e" class="img-fluid z-depth-1 rounded only-light" width="100%" height="auto" alt="Logo SFBVie" loading="eager" onerror="this.onerror=null; document.querySelectorAll('.responsive-img-srcset').forEach(function (n) { n.remove(); });"> </picture> </figure> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/logo_SFBVie_black-480.webp 480w,/assets/img/logo_SFBVie_black-800.webp 800w,/assets/img/logo_SFBVie_black-1400.webp 1400w," type="image/webp" sizes="(min-width: 930px) 270.0px, (min-width: 576px) 30vw, 95vw"></source> <img src="/assets/img/logo_SFBVie_black.png?v=fca20465b74329855da524d516362c09" class="img-fluid z-depth-1 rounded only-dark" width="100%" height="auto" alt="Logo SFBVie" loading="eager" onerror="this.onerror=null; document.querySelectorAll('.responsive-img-srcset').forEach(function (n) { n.remove(); });"> </picture> </figure> <div class="more-info"> <p>Réunion fondatrice — Créteil, mars 2026</p> <p><a href="mailto:contact@sfbvie.fr">contact@sfbvie.fr</a></p> </div> </div> <div class="next-event-wrap"><a class="next-event" href="/blog/2026/journee-sfar-inserm-2026/"> <span class="next-event-label"><i class="fa-solid fa-calendar-day"></i> Prochain événement · 8 décembre 2026</span> <span class="next-event-title">Journée SFAR-INSERM 2026</span> </a></div> <style>
+</style> <div class="profile float-right"> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/logo_SFBVie-480.webp 480w,/assets/img/logo_SFBVie-800.webp 800w,/assets/img/logo_SFBVie-1400.webp 1400w," type="image/webp" sizes="(min-width: 930px) 270.0px, (min-width: 576px) 30vw, 95vw"></source> <img src="/assets/img/logo_SFBVie.png?v=e1032f9fc41f32cce9faa7b6abe8898e" class="img-fluid z-depth-1 rounded only-light" width="100%" height="auto" alt="Logo SFBVie" loading="eager" onerror="this.onerror=null; document.querySelectorAll('.responsive-img-srcset').forEach(function (n) { n.remove(); });"> </picture> </figure> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/logo_SFBVie_black-480.webp 480w,/assets/img/logo_SFBVie_black-800.webp 800w,/assets/img/logo_SFBVie_black-1400.webp 1400w," type="image/webp" sizes="(min-width: 930px) 270.0px, (min-width: 576px) 30vw, 95vw"></source> <img src="/assets/img/logo_SFBVie_black.png?v=fca20465b74329855da524d516362c09" class="img-fluid z-depth-1 rounded only-dark" width="100%" height="auto" alt="Logo SFBVie" loading="eager" onerror="this.onerror=null; document.querySelectorAll('.responsive-img-srcset').forEach(function (n) { n.remove(); });"> </picture> </figure> <div class="more-info"> <p>Réunion fondatrice — Créteil, mars 2026</p> <p><a href="mailto:contact@sfbvie.fr">contact@sfbvie.fr</a></p> </div> </div> <div class="next-event-wrap"><div class="next-event"> <a class="next-event-main" href="/blog/2026/journee-sfar-inserm-2026/"> <span class="next-event-label"><i class="fa-solid fa-calendar-day"></i> Prochain événement · 8 décembre 2026</span> <span class="next-event-title">Journée SFAR-INSERM 2026</span> </a> <span class="next-event-cal"> <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Journ%C3%A9e+SFAR-INSERM+2026&amp;dates=20261208/20261209&amp;details=L%27%C3%A2ge+physiologique+au+c%C5%93ur+de+la+r%C3%A9ponse+au+stress+%3A+vers+une+anesth%C3%A9sie-r%C3%A9animation+de+pr%C3%A9cision+%E2%80%94+8+d%C3%A9cembre+2026.%0A%0Ahttps%3A%2F%2Fsfbvie.fr%2Fblog%2F2026%2Fjournee-sfar-inserm-2026%2F" target="_blank" rel="noopener"><i class="fa-brands fa-google"></i> Google Agenda</a> <a href="/prochain-evenement.ics" download="sfbvie-prochain-evenement.ics"><i class="fa-solid fa-calendar-plus"></i> iCal / Outlook (.ics)</a> </span> </div></div> <style>
   .next-event {
     display: block;
     margin: 0 0 1.5rem;
@@ -58,12 +58,25 @@
     background-color: var(--global-card-bg-color);
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
     color: var(--global-text-color);
-    text-decoration: none;
   }
   .next-event:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  }
+  .next-event-main,
+  .next-event-main:hover {
+    display: block;
     color: var(--global-text-color);
     text-decoration: none;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  }
+  .next-event-cal {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem 1.2rem;
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+  }
+  .next-event-cal a {
+    color: var(--global-theme-color);
   }
   .next-event-label {
     display: block;
