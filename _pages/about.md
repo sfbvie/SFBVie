@@ -85,10 +85,28 @@ Same logic as the auto-pinned card in \_pages/blog.md.
 {% endfor %}
 {% if next_event %}
 
-<div class="next-event-wrap"><a class="next-event" href="{{ next_event.url | relative_url }}">
-  <span class="next-event-label"><i class="fa-solid fa-calendar-day"></i> Prochain événement · {{ next_event.event_date }}</span>
-  <span class="next-event-title">{{ next_event.title }}</span>
-</a></div>
+{% comment %}
+"Add to calendar": Google Calendar link built here; the .ics comes from \_pages/prochain-evenement.ics (same selection
+loop, change both together). All-day event, so the end date is exclusive: last day + 1 (computed from noon to stay
+clear of DST shifts).
+{% endcomment %}
+{% assign ne_start = next_event.event_start | date: "%Y%m%d" %}
+{% capture ne_last_noon %}{{ next_event.event_end | default: next_event.event_start | date: "%Y-%m-%d" }} 12:00:00{% endcapture %}
+{% assign ne_end = ne_last_noon | date: "%s" | plus: 86400 | date: "%Y%m%d" %}
+{% capture ne_details %}{{ next_event.description | strip_html | strip }}
+
+{{ next_event.url | absolute_url }}{% endcapture %}
+
+<div class="next-event-wrap"><div class="next-event">
+  <a class="next-event-main" href="{{ next_event.url | relative_url }}">
+    <span class="next-event-label"><i class="fa-solid fa-calendar-day"></i> Prochain événement · {{ next_event.event_date }}</span>
+    <span class="next-event-title">{{ next_event.title }}</span>
+  </a>
+  <span class="next-event-cal">
+    <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text={{ next_event.title | strip_html | url_encode }}&amp;dates={{ ne_start }}/{{ ne_end }}&amp;details={{ ne_details | url_encode }}" target="_blank" rel="noopener"><i class="fa-brands fa-google"></i> Google Agenda</a>
+    <a href="{{ '/prochain-evenement.ics' | relative_url }}" download="sfbvie-prochain-evenement.ics"><i class="fa-solid fa-calendar-plus"></i> iCal / Outlook (.ics)</a>
+  </span>
+</div></div>
 
 <style>
   .next-event {
@@ -100,12 +118,25 @@ Same logic as the auto-pinned card in \_pages/blog.md.
     background-color: var(--global-card-bg-color);
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
     color: var(--global-text-color);
-    text-decoration: none;
   }
   .next-event:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  }
+  .next-event-main,
+  .next-event-main:hover {
+    display: block;
     color: var(--global-text-color);
     text-decoration: none;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  }
+  .next-event-cal {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem 1.2rem;
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+  }
+  .next-event-cal a {
+    color: var(--global-theme-color);
   }
   .next-event-label {
     display: block;

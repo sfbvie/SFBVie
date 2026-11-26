@@ -1,0 +1,24 @@
+---
+layout: null
+permalink: /prochain-evenement.ics
+sitemap: false
+---
+{% comment %}
+iCalendar file for the next upcoming event, linked from the "Prochain événement" banner on / (_pages/about.md).
+Same selection loop as _pages/about.md and _pages/blog.md: change all three together. Rebuilt daily by deploy.yml.
+{% endcomment %}{% assign today = site.time | date: "%Y%m%d" | plus: 0 %}{% assign next_event = nil %}{% assign next_start = 99999999 %}{% for p in site.posts %}{% if p.event_start and p.hide_from_list != true %}{% assign p_start = p.event_start | date: "%Y%m%d" | plus: 0 %}{% assign p_end = p.event_end | default: p.event_start | date: "%Y%m%d" | plus: 0 %}{% if p_end >= today and p_start < next_start %}{% assign next_event = p %}{% assign next_start = p_start %}{% endif %}{% endif %}{% endfor %}{% if next_event %}{% capture ne_last_noon %}{{ next_event.event_end | default: next_event.event_start | date: "%Y-%m-%d" }} 12:00:00{% endcapture %}{% capture ne_summary %}{{ next_event.title | strip_html | replace: "\", "\\" | replace: ",", "\," | replace: ";", "\;" }}{% endcapture %}{% capture ne_desc %}{{ next_event.description | strip_html | strip | replace: "\", "\\" | replace: ",", "\," | replace: ";", "\;" | strip_newlines }}\n\n{{ next_event.url | absolute_url }}{% endcapture %}BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//SFBVie//sfbvie.fr//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:{{ next_event.id | slugify }}@sfbvie.fr
+DTSTAMP:{{ site.time | date_to_xmlschema | date: "%s" | date: "%Y%m%dT%H%M%SZ" }}
+DTSTART;VALUE=DATE:{{ next_event.event_start | date: "%Y%m%d" }}
+DTEND;VALUE=DATE:{{ ne_last_noon | date: "%s" | plus: 86400 | date: "%Y%m%d" }}
+SUMMARY:{{ ne_summary }}
+DESCRIPTION:{{ ne_desc }}
+URL:{{ next_event.url | absolute_url }}
+END:VEVENT
+END:VCALENDAR
+{% endif %}
